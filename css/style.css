@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body
+  {
+    font-family: monospace;
+  }
+.row
+ {
+   max-width: 1200px;
+   margin: auto;
+ }
+
+ .main-nav
+ {
+   float: right;
+   list-style: none;
+   margin-top: 30px;
+ }
+
+
+
+ .main-nav li
+ {
+   display: inline-block;
+ }
+
+ .main-nav li.active a {
+   border: 1px solid white;
+ }
+
+.main-nav li a {
+  color:white;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.start
+{
+  width: auto;
+}
+
+
+h1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+h2 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+#ebene4 {
+                background-image: url(parallax1.jpg);
+                background-attachment: fixed;
+            }
+
+#ebene2 {
+                background-image: url(parallax2.jpg);
+            }
+
+#ebene3 {
+                background-image: url(parallax3.jpg);
+                background-attachment: fixed;
+            }
+
+
+.button
+{
+  margin-top: 30px;
+  text-align: center;
+  height: 40px;
+}
+
+
+.bbn
+{ border: 1px solid white;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+button {
+    font-family : inherit;
+    font-family: "Roboto" sans-serif !important;
+}
+
+.bbn-one {
+  background-color: darkorange;
+  font-size: 16px;
+  width: 250px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 100%;
+}
+
+.bbn-two {
+  font-size: 16px;
+  background-color: transparent;
+  width: 250px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 100%;
+
+}
+
+.bbn-two:hover {
+  background-color: darkorange;
+  transition: all 0.5s ease-in;
+}
+
+
+
+.bbn-one:hover {
+  background-color: transparent;
+  background-image: radial-gradient(circle farthest-side, darkorange, transparent);
+  transition: all 0.5s ease-in;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.logo {
+  background-image: radial-gradient(circle farthest-side, white,transparent);
+  display: inline-block;
+  padding: 6px;
+}
+
+.logo p {
+  text-align: center;
+  font-size: 20px;
+}
