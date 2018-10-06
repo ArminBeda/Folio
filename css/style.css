@@ -11,13 +11,38 @@ body
  {
    max-width: 1200px;
    margin: auto;
+   margin-bottom: 30px !important;
  }
+
 
  .main-nav
  {
    float: right;
    list-style: none;
    margin-top: 30px;
+ }
+
+ #ebene2 {
+   padding: 50px;
+ }
+
+ .warum-wir > p {
+   color: black;
+   text-decoration: none;
+   font-family: "Roboto", sans-serif;
+   margin-bottom: 50px;
+   font-size: 40px;
+   font-weight: bold;
+ }
+
+ .element > h3 {
+   font-size: 23px;
+   text-transform: uppercase;
+ }
+
+ .element > p {
+   font-size: 16px;
+   font-family: "Roboto", sans-serif;
  }
 
 
@@ -131,6 +156,17 @@ button {
   transition: all 0.5s ease-in;
 }
 
+.icon {
+    width: 150px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+
+.icon > img {
+  width: auto;
+  height: 100%;
+}
 
 
 .bbn-one:hover {
