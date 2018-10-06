@@ -22,12 +22,19 @@ body
    margin-top: 30px;
  }
 
- #ebene2 {
-   padding: 50px;
- }
+
 
  .warum-wir > p {
    color: black;
+   text-decoration: none;
+   font-family: "Roboto", sans-serif;
+   margin-bottom: 50px;
+   font-size: 40px;
+   font-weight: bold;
+ }
+
+ .der-prozess > p {
+   color: white;
    text-decoration: none;
    font-family: "Roboto", sans-serif;
    margin-bottom: 50px;
@@ -101,13 +108,25 @@ header {
             }
 
 #ebene2 {
-                background-image: url(parallax2.jpg);
+              padding: 50px;
             }
 
 #ebene3 {
-                background-image: url(parallax3.jpg);
-                background-attachment: fixed;
+                background-color: darkorange;
+                padding: 50px;
             }
+
+.number {
+  font-size: 126px;
+}
+
+.prozesstitle {
+  font-size: 36px;
+}
+
+.prozessbeschreibung {
+  font-size: 18px;
+}
 
 
 .button
@@ -166,6 +185,17 @@ button {
 .icon > img {
   width: auto;
   height: 100%;
+}
+
+.prozessicon {
+  width: auto;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.prozessicon > img {
+  width: auto;
+  height: 50%;
 }
 
 
