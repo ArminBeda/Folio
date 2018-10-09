@@ -33,14 +33,17 @@ body
    font-weight: bold;
  }
 
- .der-prozess > p {
-   color: white;
-   text-decoration: none;
+.blocktitelprozess {
    font-family: "Roboto", sans-serif;
    margin-bottom: 50px;
+   margin-left: 50px;
    font-size: 40px;
    font-weight: bold;
+   border-style: dashed;
+   background-color: darkorange;
+   width: 230px;
  }
+
 
  .element > h3 {
    font-size: 23px;
@@ -69,6 +72,17 @@ body
   padding: 5px 20px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+}
+
+.der-prozess .col-md-6{
+    border-style: dashed;
+    background-color: darkorange;
+}
+
+.der-prozess .col-md-5{
+    border-style: dashed;
+    background-color: darkorange;
+    margin-bottom: 120px;
 }
 
 .start
@@ -112,21 +126,33 @@ header {
             }
 
 #ebene3 {
-                background-color: darkorange;
-                padding: 50px;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/ebene3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
             }
 
 .number {
   font-size: 126px;
+  padding: 0px !important;
+  letter-spacing: -20px !important;
 }
 
+
 .prozesstitle {
+  padding-top: 30px;
   font-size: 36px;
+  margin: 0 !important;
+
 }
 
 .prozessbeschreibung {
   font-size: 18px;
+  margin: 0 !important;
 }
+
+
+
 
 
 .button
@@ -188,14 +214,15 @@ button {
 }
 
 .prozessicon {
-  width: auto;
-  height: 100%;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
 .prozessicon > img {
+  height: 150px;
   width: auto;
-  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
