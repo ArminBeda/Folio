@@ -24,25 +24,38 @@ body
 
 
 
- .warum-wir > p {
-   color: black;
+ .warum-wir {
+   color: #211D1C;
    text-decoration: none;
    font-family: "Roboto", sans-serif;
    margin-bottom: 50px;
    font-size: 40px;
    font-weight: bold;
+   border-style: dashed;
+   border-color: #211D1C;
+   width: 230px;
  }
 
 .blocktitelprozess {
    font-family: "Roboto", sans-serif;
    margin-bottom: 50px;
-   margin-left: 50px;
    font-size: 40px;
    font-weight: bold;
    border-style: dashed;
    background-color: darkorange;
    width: 230px;
  }
+
+ .blocktitelteam {
+   font-family: "Roboto", sans-serif;
+   font-size: 40px;
+   font-weight: bold;
+   border-style: dashed;
+   border-color: white;
+   color: white;
+   width: 230px;
+ }
+
 
 
  .element > h3 {
@@ -112,17 +125,23 @@ header {
     height: 100vh;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+
 
 }
 
 #ebene4 {
-                background-image: url(parallax1.jpg);
-                background-attachment: fixed;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse.jpg);
+  background-size: cover;
+  background-position: center center;
+  border-top-color: white;
+  border-top-width: thick;
+  border-top-style: solid;
+  padding: 50px;
+
             }
 
 #ebene2 {
-              padding: 50px;
+      padding: 50px;
             }
 
 #ebene3 {
@@ -130,6 +149,7 @@ header {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  padding: 50px;
             }
 
 .number {
@@ -150,10 +170,6 @@ header {
   font-size: 18px;
   margin: 0 !important;
 }
-
-
-
-
 
 .button
 {
@@ -246,4 +262,50 @@ button {
 .logo p {
   text-align: center;
   font-size: 20px;
+}
+
+.profil {
+  height: 300px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+}
+
+.teammembers {
+  padding-top: 20px;
+}
+
+.profilname {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+  font-size: 36px;
+  font-size: normal;
+  text-align: center;
+}
+
+.profiltitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+  font-size: 28px;
+  font-size: normal;
+  text-align: center;
+}
+
+.profilspezial {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+  font-size: 22px;
+  font-weight: bold;
+  font-size: normal;
+  text-align: center;
 }
