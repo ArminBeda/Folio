@@ -337,7 +337,7 @@
         <!-- Testimonials Section -->
 
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  
+
           <div class="carousel-inner">
             <div class="carousel-item slide1 active feedbackslide">
               <row>
@@ -583,9 +583,41 @@
 
         <!--Ebene 7 Einfach Kontakt Formular-->
         <!--Nachricht senden, JavaScript etc-->
-        <div class="ebene" id="ebene8" style="min-height: 80vh;">
-        </div>
+<div class="ebene" id="ebene8" style="min-height: 80vh;">
 
+        <label for="vorname">Vorname</label>
+        <input type="text" name="vorname" id="vorname" maxlength="30">
+
+        <p> </p> <label for="nachname">Nachname</label>
+    <input type="text" name="nachname" id="nachname" maxlength="40">
+
+    <p> </p> <label for="nachname">Bevorzugter Kontaktweg</label>
+    <fieldset>
+      <input type="radio" id="email" name="Kontaktweg" value="E-Mail">
+      <label for="email"> E-Mail</label>
+      <input type="radio" id="telefon" name="Kontaktweg" value="Telefon">
+      <label for="telefon"> Telefon</label>
+    </fieldset>
+
+    <!--per JS nur eines anzeigen lassen -->
+
+  <p> </p> <label for="email">E-Mail Adresse</label>
+<input type="text" name="email" id="email" maxlength="40">
+<p> </p> <label for="telefon">Telefonnummer</label>
+<input type="text" name="telefon" id="telefon" maxlength="40">
+
+<p></p>
+<label>Anliegen:
+  <select name="support" size="0">
+    		<option> Benutzerkonto </option>
+    			<option> Angebot </option>
+    				<option> bestehender Vertrag </option>
+              <option> Allgemein </option>
+  </select>
+
+</label>
+
+</div>
 
   <body>
 </html>
