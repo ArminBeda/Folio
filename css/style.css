@@ -523,4 +523,21 @@ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kun
 
 
 
-/*Portfoli*/
+/*Beantragen*/
+.tilgungbutton {
+  width: 100%;
+  background-color: darkorange;
+}
+
+.rechnungrange {
+    width: 80% !important;
+    margin-top: 5px;
+    margin-bottom: 0px !important;
+}
+
+.calculator{
+  border-style: solid;
+  border-color: darkorange;
+  margin-top: 40px;
+}
+/*Ende Beantragen*/
