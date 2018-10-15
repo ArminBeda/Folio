@@ -355,11 +355,47 @@ button {
 
 }
 
-.slide1 {
-  background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/starthouse2.jpg);;
+.feedbackslide {
+
   background-size: cover;
   background-position: center center;
   height: 80vh;
+}
+
+.slide1 {
+    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde1.jpg);
+}
+
+.slide2 {
+    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde2.jpg);
+}
+
+.slide3 {
+    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde3.jpg);
+}
+
+.slide4 {
+    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde4.jpg);
+}
+
+.slide5 {
+    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde5.jpg);
+}
+
+.slide6 {
+    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde6.jpg);
+}
+
+.slide7 {
+    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde7.jpg);
+}
+
+.slide8 {
+    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde8.jpg);
+}
+
+.slide9 {
+    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde9.jpg);
 }
 
 .carousel-item > .col-md-4 {
@@ -384,7 +420,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   color:white;
-  font-size: 26px;
+  font-size: 20px;
   font-size: normal;
   text-align: center;
   margin-top: 0 !important;
