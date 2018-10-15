@@ -335,12 +335,15 @@
 
 
         <!-- Testimonials Section -->
+
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
           <div class="carousel-inner">
             <div class="carousel-item slide1 active feedbackslide">
-      <row>
+              <row>
 
-      </row>
+              </row>
+<div class="blocktitelfeedback">Feedback</div>
           <div class="col-md-4">
           </div>
         <div class="col-md-4">
@@ -360,6 +363,7 @@
       <row>
 
       </row>
+<div class="blocktitelfeedback">Feedback</div>
           <div class="col-md-4">
           </div>
         <div class="col-md-4">
@@ -382,6 +386,7 @@
       <row>
 
       </row>
+<div class="blocktitelfeedback">Feedback</div>
           <div class="col-md-4">
           </div>
         <div class="col-md-4">
@@ -400,6 +405,7 @@
       <row>
 
       </row>
+<div class="blocktitelfeedback">Feedback</div>
           <div class="col-md-4">
           </div>
         <div class="col-md-4">
@@ -418,6 +424,7 @@
       <row>
 
       </row>
+<div class="blocktitelfeedback">Feedback</div>
           <div class="col-md-4">
           </div>
         <div class="col-md-4">
@@ -437,6 +444,7 @@
       <row>
 
       </row>
+<div class="blocktitelfeedback">Feedback</div>
           <div class="col-md-4">
           </div>
         <div class="col-md-4">
@@ -455,6 +463,7 @@
       <row>
 
       </row>
+<div class="blocktitelfeedback">Feedback</div>
           <div class="col-md-4">
           </div>
         <div class="col-md-4">
@@ -473,6 +482,7 @@
       <row>
 
       </row>
+<div class="blocktitelfeedback">Feedback</div>
           <div class="col-md-4">
           </div>
         <div class="col-md-4">
@@ -491,17 +501,16 @@
       <row>
 
       </row>
+<div class="blocktitelfeedback">Feedback</div>
           <div class="col-md-4">
           </div>
         <div class="col-md-4">
           <img class= "armin profil" src="img/armin.jpg" alt=" ">
           <h3 class="kundename">Oscar Bain, 67</h3>
           <h3 class="kundelocation">Ort: Karlsruhe, Deutschland</h3>
-          <h3 class="kundebeschreibung">Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-             invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea
-               rebum. Stet clita kasd gubergren, no sea takimat</h3>
+          <h3 class="kundebeschreibung">Super einfache Seite! Normalerweise
+          habe ich in meinem Alter eher Probleme mit diesem Internet. Aber diese
+           Seite sucht wie von selbst die besten Angebote für mich heraus.</h3>
         </div>
         <div class="col-md-4">
         </div>
@@ -517,6 +526,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 
 
         <!--Ebene 6 zeigt Porftolio, einfach sliding Bilder-->
@@ -648,9 +658,41 @@
 
         <!--Ebene 7 Einfach Kontakt Formular-->
         <!--Nachricht senden, JavaScript etc-->
-        <div class="ebene" id="ebene8" style="min-height: 80vh;">
-        </div>
+<div class="ebene" id="ebene8" style="min-height: 80vh;">
 
+        <label for="vorname">Vorname</label>
+        <input type="text" name="vorname" id="vorname" maxlength="30">
+
+        <p> </p> <label for="nachname">Nachname</label>
+    <input type="text" name="nachname" id="nachname" maxlength="40">
+
+    <p> </p> <label for="nachname">Bevorzugter Kontaktweg</label>
+    <fieldset>
+      <input type="radio" id="email" name="Kontaktweg" value="E-Mail">
+      <label for="email"> E-Mail</label>
+      <input type="radio" id="telefon" name="Kontaktweg" value="Telefon">
+      <label for="telefon"> Telefon</label>
+    </fieldset>
+
+    <!--per JS nur eines anzeigen lassen -->
+
+  <p> </p> <label for="email">E-Mail Adresse</label>
+<input type="text" name="email" id="email" maxlength="40">
+<p> </p> <label for="telefon">Telefonnummer</label>
+<input type="text" name="telefon" id="telefon" maxlength="40">
+
+<p></p>
+<label>Anliegen:
+  <select name="support" size="0">
+    		<option> Benutzerkonto </option>
+    			<option> Angebot </option>
+    				<option> bestehender Vertrag </option>
+              <option> Allgemein </option>
+  </select>
+
+</label>
+
+</div>
 
   <body>
 </html>

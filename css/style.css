@@ -56,6 +56,16 @@ body
    width: 230px;
  }
 
+ .blocktitelfeedback {
+   font-family: "Roboto", sans-serif !important;
+   font-size: 40px !important;
+   position: absolute !important;
+   font-weight: bold;
+   border-style: dashed;
+   border-color: white;
+   color: white;
+   width: 230px;
+ }
 
 
  .element > h3 {
