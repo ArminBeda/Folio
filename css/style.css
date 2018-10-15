@@ -437,3 +437,65 @@ button {
 
 
 /* Ende Feedbacks */
+
+/* Portfolio */
+.portfoliopic {
+
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.pic1 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde1.jpg);
+}
+
+.pic2 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde2.jpg);
+}
+
+.pic3 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde3.jpg);
+}
+
+.pic4 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde4.jpg);
+}
+
+.pic5 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde5.jpg);
+}
+
+.pic6 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde6.jpg);
+}
+
+.pic7 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde7.jpg);
+}
+
+.pic8 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde8.jpg);
+}
+
+.pic9 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde9.jpg);
+}
+
+.pic10 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde10.jpg);
+}
+
+.pic11 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde11.jpg);
+}
+
+.pic12 {
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde12.jpg);
+}
+
+
+
+
+/*Portfoli*/
