@@ -56,6 +56,16 @@ body
    width: 230px;
  }
 
+ .blocktitelfeedback {
+   font-family: "Roboto", sans-serif !important;
+   font-size: 40px !important;
+   position: absolute !important;
+   font-weight: bold;
+   border-style: dashed;
+   border-color: white;
+   color: white;
+   width: 230px;
+ }
 
 
  .element > h3 {
@@ -150,6 +160,16 @@ header {
   background-position: center center;
   background-attachment: fixed;
   padding: 50px;
+            }
+
+#ebene8 {
+  background-color: darkorange;
+  background-position: center center;
+  border-top-color: white;
+  border-top-width: thick;
+  border-top-style: solid;
+  padding: 50px;
+
             }
 
 .number {
@@ -503,4 +523,21 @@ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kun
 
 
 
-/*Portfoli*/
+/*Beantragen*/
+.tilgungbutton {
+  width: 100%;
+  background-color: darkorange;
+}
+
+.rechnungrange {
+    width: 80% !important;
+    margin-top: 5px;
+    margin-bottom: 0px !important;
+}
+
+.calculator{
+  border-style: solid;
+  border-color: darkorange;
+  margin-top: 40px;
+}
+/*Ende Beantragen*/
