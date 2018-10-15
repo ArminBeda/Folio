@@ -360,10 +360,14 @@ button {
   background-size: cover;
   background-position: center center;
   height: 80vh;
+  background-color:rgba(238,118,0,0.85);
 }
 
+/*
 .slide1 {
+
     background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde1.jpg);
+
 }
 
 .slide2 {
@@ -397,6 +401,7 @@ button {
 .slide9 {
     background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde9.jpg);
 }
+*/
 
 .carousel-item > .col-md-4 {
   margin-top: 5%;
