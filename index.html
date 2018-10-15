@@ -562,7 +562,7 @@
           <!--JavaScript, require, reuqest etc. Antrag ab-->
 
           <div class="ebene" id="ebene7" style="min-height: 80vh;">
-            <div class="container calculator">
+            <div class="container antrag">
             <div class="row">
               <!--Rechner-->
 
@@ -579,9 +579,11 @@
                   <!--1st-->
                   <div class="row">
                     <div class="col-md-6">
+                      Preis in €:
                       <input name="calcPreis" type="text" placeholder="Preis" />
                    </div>
                    <div class="col-md-6">
+                     Eigenteil in €:
                      <input name="calcEigenteil" type="text" placeholder="Eigenteil" />
                   </div>
                 </div>
@@ -589,61 +591,48 @@
                   <!--2st-->
                 <div class="row">
                   <div class="col-md-6">
+                     Miete in €:
                     <input name="calcMiete" type="text" placeholder="umgf. monatliche Miete" />
                  </div>
-                 <div class="col-md-6">
-                   <input name="calcEigenteil" type="text" placeholder="Eigenteil" />
+                   <div class="col-md-6 side-by-side">
+                     Laufzeit:
+                     <select>
+                   <option value="6m">6 Monate</option>
+                   <option value="12m">12 Monate</option>
+                   <option value="18m">18 Monate</option>
+                   <option value="24m">24 Monate</option>
+                   <option value="30m">30 Monate</option>
+                   <option value="36m">36 Monate</option>
+                   <option value="42m">42 Monate</option>
+                   <option value="48m">48 Monate</option>
+                   <option value="54m">54 Monate</option>
+                   <option value="60m">60 Monate</option>
+                   <option value="66m">66 Monate</option>
+                   <option value="72m">72 Monate</option>
+                   <option value="78m">78 Monate</option>
+                   <option value="84m">84 Monate</option>
+                   <option value="90m">90 Monate</option>
+                   <option value="96m">96 Monate</option>
+                   <option value="102m">102 Monate</option>
+                   <option value="108m">108 Monate</option>
+                   <option value="114m">114 Monate</option>
+                   <option value="120m">120 Monate</option>
+                 </select>
+                 <input type="range" class="rechnungrange" min="0" max="120" step="6.0" >
                 </div>
-              </div>
-
-                <!--3st-->
-              <div class="row">
-                <div class="col-md-6">
-                  Laufzeit:
-                  <select>
-                <option value="6m">6 Monate</option>
-                <option value="12m">12 Monate</option>
-                <option value="18m">18 Monate</option>
-                <option value="24m">24 Monate</option>
-                <option value="30m">30 Monate</option>
-                <option value="36m">36 Monate</option>
-                <option value="42m">42 Monate</option>
-                <option value="48m">48 Monate</option>
-                <option value="54m">54 Monate</option>
-                <option value="60m">60 Monate</option>
-                <option value="66m">66 Monate</option>
-                <option value="72m">72 Monate</option>
-                <option value="78m">78 Monate</option>
-                <option value="84m">84 Monate</option>
-                <option value="90m">90 Monate</option>
-                <option value="96m">96 Monate</option>
-                <option value="102m">102 Monate</option>
-                <option value="108m">108 Monate</option>
-                <option value="114m">114 Monate</option>
-                <option value="120m">120 Monate</option>
-              </select>
-                 </div>
-               <div class="col-md-6">
 
               </div>
-            </div>
 
-            <div class="row">
-              <div class="col-md-6">
-              <input type="range" min="0" max="120" step="6.0" >
-              </div>
-              <div class="col-md-6">
-              </div>
-          </div>
+
+
+
 
 
 
         <div class="row">
-          <div class="col-md-10">
-            <button href="" class="bbn">Mehr Erfahren</button>
+          <div class="col-md-12">
+            <button href="" class="bbn tilgungbutton">Tilgungsplan Beantragen</button>
           </div>
-        <div class="col-md-2">  
-        </div>
       </div>
 
 
