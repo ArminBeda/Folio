@@ -1,16 +1,19 @@
-let calculate = () => {
+function calculate () {
 
-      let eigenteil = document.getElementByName("calcEigenteil");
-      let preis = document.getElementByClass("calcPreis");
-      let miete = document.getElementByClass("calcMiete");
-      let laufzeit = document.getElementByClass("calcLaufzeit");
+      let eigenteil = Number(document.getElementById("calcEigenteil").value);
+      let preis = Number(document.getElementById("calcPreis").value);
+      let miete = Number(document.getElementById("calcMiete").value);
+      let laufzeit = Number(document.getElementById("calcLaufzeit").value);
 
-      console.log(eigenteil.value);
+      console.log(eigenteil);
+      console.log(preis);
+      console.log(miete);
+      console.log(laufzeit);
 
         let restwert = preis - eigenteil;
         let rate = restwert/laufzeit;
 
-        for (int i = 1; i < laufzeit || restwert > 0; i++) {
+        for (let i = 1; i < laufzeit || restwert > 0; i++) {
             if (i % 12 == 1) {
                 console.log("--------------------");
                 console.log((i/12 + 1) + ". JAHR");
@@ -49,11 +52,11 @@ let calculate = () => {
 
     }
 
-    let round = (double value, int places) => {
+    function round ( value, places) {
             if (places < 0) throw new IllegalArgumentException();
 
-            let factor = (long) Math.pow(10, places);
+            let factor = Math.pow(10, places);
             let = value * factor;
             let tmp = Math.round(value);
-            return (double) tmp / factor;
+            return (tmp / factor);
         }
