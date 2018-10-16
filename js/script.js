@@ -1,5 +1,10 @@
 function calculate () {
 
+    var doc = new jsPDF();
+    line = 20;
+
+
+
       let eigenteil = Number(document.getElementById("calcEigenteil").value);
       let preis = Number(document.getElementById("calcPreis").value);
       let miete = Number(document.getElementById("calcMiete").value);
@@ -10,53 +15,80 @@ function calculate () {
       console.log(miete);
       console.log(laufzeit);
 
+
+
         let restwert = preis - eigenteil;
         let rate = restwert/laufzeit;
+        let array = [];
 
-        for (let i = 1; i < laufzeit || restwert > 0; i++) {
-            if (i % 12 == 1) {
-                console.log("--------------------");
-                console.log((i/12 + 1) + ". JAHR");
-                console.log("--------------------");
+        for (let i = 1; i <= laufzeit && restwert > 0; i++) {
+            if (i % 12 == 1 ) {
+                array = [];
+                array[0] = "--------------------";
+                array[1] = (round(i/12 + 1,0) + ". JAHR");
+                array[2] = "--------------------";
+                writeblock(array, doc);
             }
-            console.log("--------------------");
-            console.log(i + ".Monat");
-            console.log(" ");
+            array = [];
+            array[0] = "--------------------";
+            array[1] = (i + ".Monat");
+            array[2] = (" ");
             let kundeteil = 1 - restwert/preis;
             let bilalteil= restwert/preis;
-            console.log("Restwert:" + round(restwert,2));
-            console.log("Bezahlende Miete: "  + round(bilalteil*miete,2) );
-            console.log("Eigentumsquote:");
-            console.log( "        Kunde: " + round(kundeteil,2)*100 + "%");
-            console.log( "        Immobilal: " + round(bilalteil,2)*100 + "%");
-            console.log("Monatliche Ratenzahlung:" + round(rate,2));
+            array[3] = ("Restwert:" + round(restwert,2));
+            array[4] = "Bezahlende Miete: "  + round(bilalteil*miete,2);
+            array[5] = ("Eigentumsquote:");
+            array[6] = ("        Kunde: " + round(kundeteil*100,2) + "%");
+            array[7] = ("        Immobilal: " + round(bilalteil*100,2) + "%");
+            array[8] = ("Monatliche Ratenzahlung:" + round(rate,2));
 
-           console.log("--------------------");
+           array[9] = ("--------------------");
+
+           writeblock(array, doc);
 
             restwert = restwert - rate;
         }
 
-        console.log("--------------------");
-        console.log((laufzeit + 1 )+ ".Monat");
-        console.log(" ");
+        array = [];
+        array[0] = "--------------------";
+        array[1] = (laufzeit + 1 )+ ".Monat";
+        array[2] = " ";
         let kundeteil = 1 - restwert/preis;
-        let bilalteil= restwert/preis;
-        console.log("Restwert:" + round(restwert,2));
-        console.log("Bezahlende Miete: "  + round(bilalteil*miete,2) );
-        console.log("Eigentumsquote:");
-        console.log( "        Kunde: " + round(kundeteil,2)*100 + "%");
-        console.log( "        Immobilal: " + round(bilalteil,2)*100 + "%");
-        console.log("Monatliche Ratenzahlung:" + 0);
+        console.log(kundeteil);
+        let bilalteil = restwert/preis;
+        console.log(bilalteil);
+        array[3] = ("Restwert:" + round(restwert,2));
+        array[4] = ("Bezahlende Miete: "  + round(bilalteil*miete,2));
+        array[5] = ("Eigentumsquote:");
+        array[6] = ( "        Kunde: " + round(kundeteil,2)*100 + "%");
+        array[7] = ( "        Immobilal: " + round(bilalteil,2)*100 + "%");
+        array[8] = ("Monatliche Ratenzahlung:" + 0);
 
-        console.log("--------------------");
+        array[9] = ("--------------------");
+
+        writeblock(array,doc);
+
+        doc.save('a4.pdf');
+
 
     }
 
-    function round ( value, places) {
-            if (places < 0) throw new IllegalArgumentException();
+    function round (num, decimals) {
+      var t = Math.pow(10, decimals);
+      return (Math.round((num * t) + (decimals>0?1:0)*(Math.sign(num) * (10 / Math.pow(100, decimals)))) / t).toFixed(decimals);
 
-            let factor = Math.pow(10, places);
-            let = value * factor;
-            let tmp = Math.round(value);
-            return (tmp / factor);
-        }
+    }
+
+  function  writeblock (array, doc) {
+      length = array.length;
+
+      if(line + array.length*5 > 250) {
+        line = 20;
+        doc.addPage();
+      }
+      for (i = 0; i < length; i++) {
+        doc.text(array[i], 20, line);
+        line = line + 5;
+      }
+
+    }
