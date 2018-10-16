@@ -1,5 +1,9 @@
 function calculate () {
 
+
+
+
+
     var doc = new jsPDF();
     line = 20;
 
@@ -68,8 +72,28 @@ function calculate () {
 
         writeblock(array,doc);
 
-        doc.save('a4.pdf');
+      //  doc.save('a4.pdf');
 
+      var config = {
+        apiKey: "AIzaSyAGjAYiw4Hr-IQusKVkmxVSKtmSCVKKfBw",
+        authDomain: "wegprog.firebaseapp.com",
+        databaseURL: "https://wegprog.firebaseio.com",
+        projectId: "wegprog",
+        storageBucket: "wegprog.appspot.com",
+        messagingSenderId: "565810625989"
+      };
+      firebase.initializeApp(config);
+
+        const ref = firebase.storage().ref('Tilgungsplan/' + ('tilgungsplan.pdf'));
+
+        const metadata = { contentType: doc.type };
+
+        console.log(metadata);
+        const task = ref.put(doc);
+
+        task
+          .then(snapshot => snapshot.ref.getDownloadURL())
+          .then(url => console.log(url))
 
     }
 
@@ -78,6 +102,9 @@ function calculate () {
       return (Math.round((num * t) + (decimals>0?1:0)*(Math.sign(num) * (10 / Math.pow(100, decimals)))) / t).toFixed(decimals);
 
     }
+
+
+
 
   function  writeblock (array, doc) {
       length = array.length;
