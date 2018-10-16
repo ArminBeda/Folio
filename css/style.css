@@ -162,6 +162,16 @@ header {
   padding: 50px;
             }
 
+#ebene8 {
+  background-color: darkorange;
+  background-position: center center;
+  border-top-color: white;
+  border-top-width: thick;
+  border-top-style: solid;
+  padding: 50px;
+
+            }
+
 .number {
   font-size: 126px;
   padding: 0px !important;
