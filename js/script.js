@@ -72,30 +72,22 @@ function calculate () {
 
         writeblock(array,doc);
 
-      //  doc.save('a4.pdf');
 
-      var config = {
-        apiKey: "AIzaSyAGjAYiw4Hr-IQusKVkmxVSKtmSCVKKfBw",
-        authDomain: "wegprog.firebaseapp.com",
-        databaseURL: "https://wegprog.firebaseio.com",
-        projectId: "wegprog",
-        storageBucket: "wegprog.appspot.com",
-        messagingSenderId: "565810625989"
-      };
-      firebase.initializeApp(config);
+        doc.setProperties({
+            title: 'PDF Title',
+            subject: 'Info about PDF',
+            author: 'PDFAuthor',
+            keywords: 'generated, javascript, web 2.0, ajax',
+            creator: 'My Company'
+        });
 
-        const ref = firebase.storage().ref('Tilgungsplan/' + ('tilgungsplan.pdf'));
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('style','position:absolute; top:0;bottom:0;right:0;left:0; height:100%; width:100%');
+        document.body.appendChild(iframe);
+        iframe.src = doc.output('datauristring');
+        doc.save('doc.pdf'); /* download the file immediately on loading */
 
-        const metadata = { contentType: doc.type };
-
-        console.log(metadata);
-        const task = ref.put(doc);
-
-        task
-          .then(snapshot => snapshot.ref.getDownloadURL())
-          .then(url => console.log(url))
-
-    }
+          }
 
     function round (num, decimals) {
       var t = Math.pow(10, decimals);
