@@ -42,7 +42,7 @@ body
    font-size: 40px;
    font-weight: bold;
    border-style: dashed;
-   background-color: darkorange;
+   background-color: #FF8B00;
    width: 230px;
  }
 
@@ -99,12 +99,12 @@ body
 
 .der-prozess .col-md-6{
     border-style: dashed;
-    background-color: darkorange;
+    background-color: #FF8B00;
 }
 
 .der-prozess .col-md-5{
     border-style: dashed;
-    background-color: darkorange;
+    background-color: #FF8B00;
     margin-bottom: 120px;
 }
 
@@ -163,7 +163,7 @@ header {
             }
 
 #ebene8 {
-  background-color: darkorange;
+  background-color: #FF8B00;
   background-position: center center;
   border-top-color: white;
   border-top-width: thick;
@@ -214,7 +214,7 @@ button {
 }
 
 .bbn-one {
-  background-color: darkorange;
+  background-color: #FF8B00;
   font-size: 16px;
   width: 250px;
   padding-left: 5px;
@@ -233,7 +233,7 @@ button {
 }
 
 .bbn-two:hover {
-  background-color: darkorange;
+  background-color: #FF8B00;
   transition: all 0.5s ease-in;
 }
 
@@ -264,7 +264,7 @@ button {
 
 .bbn-one:hover {
   background-color: transparent;
-  background-image: radial-gradient(circle farthest-side, darkorange, transparent);
+  background-image: radial-gradient(circle farthest-side, #FF8B00, transparent);
   transition: all 0.5s ease-in;
 }
 
@@ -526,7 +526,7 @@ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kun
 /*Beantragen*/
 .tilgungbutton {
   width: 100%;
-  background-color: darkorange;
+  background-color: #FF8B00;
 }
 
 .rechnungrange {
@@ -537,7 +537,7 @@ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kun
 
 .calculator{
   border-style: solid;
-  border-color: darkorange;
+  border-color: #FF8B00;
   margin-top: 40px;
 }
 /*Ende Beantragen*/
