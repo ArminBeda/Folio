@@ -663,41 +663,61 @@
                        >
                            <!-- Vorname und Nachname -->
                            <label for="firstname">
-                               Dein Name:
-                               <span class="required">*</span>
+                              Persönliche Daten:
+                               <span class="required"></span>
                            </label>
                            <div class="side-by-side">
-                               <input name="firstname" type="text" placeholder="Vorname" />
-                               <input name="lastname" type="text" placeholder="Nachname" />
+                               <input name="firstname" type="text" placeholder="Vorname*" />
+                               <input name="lastname" type="text" placeholder="Nachname*" />
                            </div>
+                           </br>
+                           <div class="side-by-side">
+                               <input name="email" type="text" placeholder="E-Mail*" />
+                               <input name="handynummer" type="text" placeholder="Handynummer*" />
+                           </div>
+                         </br>
+                         <div class="side-by-side">
+                             <input name="beruf" type="text" placeholder="Beruf" />
+                             <input name="nettogehalt" type="text" placeholder="jährl. Nettogehalt in €" />
+                         </div>
 
-                           <!-- E-Mailadresse -->
-                           <label for="email">
-                               E-Mail:
-                               <span class="required">*</span>
-                           </label>
-                           <input name="email" type="email" />
+                         <!-- Imobilien -->
+                         <label for="immo">
+                             ImmoBilien Info
+                         </label>
+                        <input name="link" type="text" placeholder="URL von Webseite wo es verkauft wird" />
 
-                           <!-- E-Mailadresse -->
-                           <label for="email">
-                               Handynummer:
-                           </label>
-                           <input name="email" type="email" />
+                        <!-- Imobilien -->
+                        <label for="immo">
+                            Adresse der Immobilien
+                        </label>
+                        <div class="side-by-side">
+                          <input name="strasse" type="text" placeholder="Strasse*" />
+                          <input name="hausnummer" type="text" placeholder="Hausnummer*" />
+                        </div>
+                        </br>
+                        <div class="side-by-side">
+                          <input name="plz" type="text" placeholder="PLZ" />
+                          <input name="stadt" type="text" placeholder="Stadt" />
+                        </div>
+                          </br>
+                        <input name="land" type="text" placeholder="Land" />
 
-                           <!-- Auswahlliste für den Betreff -->
-                           <label for="subject">
-                               Betreff:
-                           </label>
-                           <select name="subject">
-                               <option selected="selected">Allgemeine Anfrage</option>
-                               <option>Frage über den Finanzierung</option>
-                               <option>Kooperation und Partnerschaft</option>
-                           </select>
+                        <!-- GPS Cooridnaten -->
+                        <label for="immo">
+                            GPS-Koordinaten
+                        </label>
+                        <div class="side-by-side">
+                          <input name="latitude" type="text" placeholder="Latitude" />
+                          <input name="longitude" type="text" placeholder="Longitude" />
+                        </div>
+
+
+
 
                            <!-- Die Nachricht -->
                            <label for="message">
-                               Deine Nachricht:
-                               <span class="required">*</span>
+                               Kommentar, etc.:
                            </label>
                            <textarea name="message"></textarea>
 
