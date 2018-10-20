@@ -543,3 +543,211 @@ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kun
   margin-top: 40px;
 }
 /*Ende Beantragen*/
+
+/**Ebene7 antraform
+/*
+ * Allgemeine Angaben
+ */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12pt;
+}
+
+/*
+ * Basis-Layout des Formulars
+ */
+#ebene7 form {
+    max-width: 30em;
+
+    border: 1px solid #d0d0d0;
+    background: #f0f0f0;
+    padding: 1em;
+}
+
+#ebene7 form > *,
+#ebene7 form > .side-by-side > * {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#ebene7 form > .side-by-side {
+    display: flex;
+}
+
+#ebene7 form > .side-by-side > * {
+    margin-right: 0.25em;
+}
+
+#ebene7 form > .side-by-side > *:last-child {
+    margin-right: 0;
+}
+
+/*
+ * Gestaltung der Feldbezeichner
+ */
+#ebene7 form label {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+#ebene7 form label:first-child {
+    margin-top: 0;
+}
+
+#ebene7 form label .required {
+    color: darkred;
+}
+
+/*
+ * Gestaltung der Formularfelder
+ */
+#ebene7 input,
+#ebene7 textarea,
+#ebene7 select {
+    border: 1px solid #bebebe;
+    padding: 0.5em;
+    margin: 0;
+    outline: none;
+}
+
+#ebene7 textarea {
+    height: 12em;
+}
+
+/*
+ * Der Button zum Abschicken des Formulars
+ */
+#ebene7 input[type="submit"] {
+    margin-top: 2em;
+    width: auto;
+
+    background-color: #2e2f30;
+    color: white;
+    font-weight: bold;
+
+    transition: background-color 0.2s;
+}
+
+#ebene7 input[type="submit"]:hover {
+    background-color: #2868A8;
+}
+
+/*
+ * Element mit dem Prüfergebnis
+ */
+#ebene7 #result {
+    margin-top: 1em;
+    color: red;
+}
+
+#ebene7 #result.okay {
+    color: darkgreen;
+}
+
+
+
+/**Ebene8 supports
+/*
+ * Allgemeine Angaben
+ */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12pt;
+}
+
+/*
+ * Basis-Layout des Formulars
+ */
+#ebene8 form {
+    max-width: 30em;
+
+    border: 1px solid #d0d0d0;
+    background: #f0f0f0;
+    padding: 1em;
+}
+
+#ebene8 form > *,
+#ebene8 form > .side-by-side > * {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#ebene8 form > .side-by-side {
+    display: flex;
+}
+
+#ebene8 form > .side-by-side > * {
+    margin-right: 0.25em;
+}
+
+#ebene8 form > .side-by-side > *:last-child {
+    margin-right: 0;
+}
+
+/*
+ * Gestaltung der Feldbezeichner
+ */
+#ebene8 form label {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+#ebene8 form label:first-child {
+    margin-top: 0;
+}
+
+#ebene8 form label .required {
+    color: darkred;
+}
+
+/*
+ * Gestaltung der Formularfelder
+ */
+#ebene8 input,
+#ebene8 textarea,
+#ebene8 select {
+    border: 1px solid #bebebe;
+    padding: 0.5em;
+    margin: 0;
+    outline: none;
+}
+
+#ebene8 textarea {
+    height: 12em;
+}
+
+/*
+ * Der Button zum Abschicken des Formulars
+ */
+#ebene8 input[type="submit"] {
+    margin-top: 2em;
+    width: auto;
+
+    background-color: #2e2f30;
+    color: white;
+    font-weight: bold;
+
+    transition: background-color 0.2s;
+}
+
+#ebene8 input[type="submit"]:hover {
+    background-color: #2868A8;
+}
+
+/*
+ * Element mit dem Prüfergebnis
+ */
+#ebene8 #result {
+    margin-top: 1em;
+    color: red;
+}
+
+#ebene8 #result.okay {
+    color: darkgreen;
+}

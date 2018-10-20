@@ -486,7 +486,7 @@
       <row>
 
       </row>
-<div class="blocktitelfeedback">Feedback</div>
+<!-- <div class="blocktitelfeedback">Feedback</div> --->
           <div class="col-md-4">
           </div>
         <div class="col-md-4">
@@ -655,6 +655,58 @@
 
               <!--Fragebogen-->
               <div class="col-md-6">
+
+                          <form
+                           onsubmit = "validateForm(event)"
+                           action   = "antrag.php"
+                           method   = "POST"
+                       >
+                           <!-- Vorname und Nachname -->
+                           <label for="firstname">
+                               Dein Name:
+                               <span class="required">*</span>
+                           </label>
+                           <div class="side-by-side">
+                               <input name="firstname" type="text" placeholder="Vorname" />
+                               <input name="lastname" type="text" placeholder="Nachname" />
+                           </div>
+
+                           <!-- E-Mailadresse -->
+                           <label for="email">
+                               E-Mail:
+                               <span class="required">*</span>
+                           </label>
+                           <input name="email" type="email" />
+
+                           <!-- E-Mailadresse -->
+                           <label for="email">
+                               Handynummer:
+                           </label>
+                           <input name="email" type="email" />
+
+                           <!-- Auswahlliste für den Betreff -->
+                           <label for="subject">
+                               Betreff:
+                           </label>
+                           <select name="subject">
+                               <option selected="selected">Allgemeine Anfrage</option>
+                               <option>Frage über den Finanzierung</option>
+                               <option>Kooperation und Partnerschaft</option>
+                           </select>
+
+                           <!-- Die Nachricht -->
+                           <label for="message">
+                               Deine Nachricht:
+                               <span class="required">*</span>
+                           </label>
+                           <textarea name="message"></textarea>
+
+                           <!-- Button zum Abschicken des Formulars -->
+                           <input type="submit" value="Abschicken" />
+                       </form>
+
+                       <!-- Hier wird das Ergebnis der Prüfung angezeigt -->
+                       <div id="result"></div>
               </div>
             </div class="row">
         </div>
@@ -663,7 +715,63 @@
         <!--Ebene 7 Einfach Kontakt Formular-->
         <!--Nachricht senden, JavaScript etc-->
         <div class="ebene" id="ebene8" style="min-height: 80vh;">
-        <div class="blocktitelfeedback">Support</div>
+          <div class="blocktitelfeedback">Support</div>
+          </br></br></br></br></br>
+
+
+
+          <form
+           onsubmit = "validateForm(event)"
+           action   = "contact-form.php"
+           method   = "POST"
+       >
+           <!-- Vorname und Nachname -->
+           <label for="firstname">
+               Dein Name:
+               <span class="required">*</span>
+           </label>
+           <div class="side-by-side">
+               <input name="firstname" type="text" placeholder="Vorname" />
+               <input name="lastname" type="text" placeholder="Nachname" />
+           </div>
+
+           <!-- E-Mailadresse -->
+           <label for="email">
+               E-Mail:
+               <span class="required">*</span>
+           </label>
+           <input name="email" type="email" />
+
+           <!-- E-Mailadresse -->
+           <label for="email">
+               Handynummer:
+           </label>
+           <input name="email" type="email" />
+
+           <!-- Auswahlliste für den Betreff -->
+           <label for="subject">
+               Betreff:
+           </label>
+           <select name="subject">
+               <option selected="selected">Allgemeine Anfrage</option>
+               <option>Frage über den Finanzierung</option>
+               <option>Kooperation und Partnerschaft</option>
+           </select>
+
+           <!-- Die Nachricht -->
+           <label for="message">
+               Deine Nachricht:
+               <span class="required">*</span>
+           </label>
+           <textarea name="message"></textarea>
+
+           <!-- Button zum Abschicken des Formulars -->
+           <input type="submit" value="Abschicken" />
+       </form>
+
+       <!-- Hier wird das Ergebnis der Prüfung angezeigt -->
+       <div id="result"></div>
+      <!--  <div class="blocktitelfeedback">Support</div>
       </br></br></br></br></br>
     <label for="vorname">Vorname</label>
         <input type="text" name="vorname" id="vorname" maxlength="30">
@@ -677,11 +785,11 @@
       <label for="email"> E-Mail</label>
       <input type="radio" id="telefon" name="Kontaktweg" value="Telefon">
       <label for="telefon"> Telefon</label>
-    </fieldset>
+    </fieldset> -->
 
     <!--per JS nur eines anzeigen lassen -->
 
-  <p> </p> <label for="email">E-Mail Adresse</label>
+  <!-- <p> </p> <label for="email">E-Mail Adresse</label>
 <input type="text" name="email" id="email" maxlength="40">
 <p> </p> <label for="telefon">Telefonnummer</label>
 <input type="text" name="telefon" id="telefon" maxlength="40">
@@ -696,7 +804,7 @@
   </select>
 </label>
 
-</div>
+</div> -->
 
   <body>
 </html>
