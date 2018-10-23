@@ -1,4 +1,3 @@
-myMap();
 
 function calculate () {
 
