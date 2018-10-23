@@ -58,9 +58,24 @@
 .immolog {
   width: 230px;
   height: auto;
+  background-image: radial-gradient(circle farthest-side, white,transparent);
+  display: inline-block;
 }
 
-.
+.belaltext {
+  font-size: 48px;
+}
+
+.centerBlock {
+    display:table-row;
+    width:auto;
+    text-align: center;
+
+}
+
+
+
+
 
  /**Ebene 8 Ende
  */
