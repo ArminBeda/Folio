@@ -39,7 +39,7 @@
   border-color: #211D1C;
   width: 230px;
 }
-<<<<<<< HEAD
+
 /**Ebene 2 Ende
 */
 
@@ -92,12 +92,11 @@
 * {
   margin: 0;
   padding: 0;
-=======
+}
 
 .element > h3 {
   font-size: 23px;
   text-transform: uppercase;
->>>>>>> f095b0b74972d754c68c5a07ad6403c729435bb0
 }
 
 .element > p {
