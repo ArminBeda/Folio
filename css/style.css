@@ -7,6 +7,13 @@
   margin-top: 30px;
 }
 
+.row
+ {
+   max-width: 1200px;
+   margin: auto;
+   margin-bottom: 30px !important;
+ }
+
 
 /**Ebene Header Ende
 */
@@ -21,7 +28,6 @@
 /**Ebene 2 Start
 */
 
-
 .warum-wir {
   color: #211D1C;
   text-decoration: none;
@@ -33,18 +39,71 @@
   border-color: #211D1C;
   width: 230px;
 }
+
+.element > h3 {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.element > p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
 /**Ebene 2 Ende
 */
+
+/**Ebene 3 Start
+*/
+.blocktitelprozess {
+   font-family: "Roboto", sans-serif;
+   margin-bottom: 50px;
+   font-size: 40px;
+   font-weight: bold;
+   border-style: dashed;
+   background-color: #FF8B00;
+   width: 230px;
+ }
+
+
+ /**Ebene 3 Ende
+ */
+
+ /**Ebene 4 Start
+ */
+ .blocktitelteam {
+   font-family: "Roboto", sans-serif;
+   font-size: 40px;
+   font-weight: bold;
+   border-style: dashed;
+   border-color: white;
+   color: white;
+   width: 230px;
+ }
+
+
+  /**Ebene 4 Ende
+  */
+
+/**Ebene 5 Start
+*/
+.blocktitelfeedback {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 40px !important;
+  position: absolute !important;
+  font-weight: bold;
+  border-style: dashed;
+  border-color: white;
+  color: white;
+  width: 230px;
+}
+
+   /**Ebene 5 Ende
+   */
 
 /**Ebene 7 Start
 */
 
-.row
- {
-   max-width: 1200px;
-   margin: auto;
-   margin-bottom: 30px !important;
- }
 
  /**Ebene 7 Ende
  */
@@ -65,47 +124,13 @@ body
 
 
 
-.blocktitelprozess {
-   font-family: "Roboto", sans-serif;
-   margin-bottom: 50px;
-   font-size: 40px;
-   font-weight: bold;
-   border-style: dashed;
-   background-color: #FF8B00;
-   width: 230px;
- }
-
- .blocktitelteam {
-   font-family: "Roboto", sans-serif;
-   font-size: 40px;
-   font-weight: bold;
-   border-style: dashed;
-   border-color: white;
-   color: white;
-   width: 230px;
- }
-
- .blocktitelfeedback {
-   font-family: "Roboto", sans-serif !important;
-   font-size: 40px !important;
-   position: absolute !important;
-   font-weight: bold;
-   border-style: dashed;
-   border-color: white;
-   color: white;
-   width: 230px;
- }
 
 
- .element > h3 {
-   font-size: 23px;
-   text-transform: uppercase;
- }
 
- .element > p {
-   font-size: 16px;
-   font-family: "Roboto", sans-serif;
- }
+
+
+
+
 
 
 
