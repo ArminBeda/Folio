@@ -1,12 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
+/**Ebene Header Start
+*/
+.main-nav
+{
+  float: right;
+  list-style: none;
+  margin-top: 30px;
 }
 
-body
-  {
-    font-family: monospace;
-  }
 .row
  {
    max-width: 1200px;
@@ -15,27 +15,46 @@ body
  }
 
 
- .main-nav
- {
-   float: right;
-   list-style: none;
-   margin-top: 30px;
- }
+/**Ebene Header Ende
+*/
+
+/**Ebene 1 Start
+*/
 
 
+/**Ebene 1 Ende
+*/
 
- .warum-wir {
-   color: #211D1C;
-   text-decoration: none;
-   font-family: "Roboto", sans-serif;
-   margin-bottom: 50px;
-   font-size: 40px;
-   font-weight: bold;
-   border-style: dashed;
-   border-color: #211D1C;
-   width: 230px;
- }
+/**Ebene 2 Start
+*/
 
+.warum-wir {
+  color: #211D1C;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  border-style: dashed;
+  border-color: #211D1C;
+  width: 230px;
+}
+
+.element > h3 {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.element > p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+/**Ebene 2 Ende
+*/
+
+/**Ebene 3 Start
+*/
 .blocktitelprozess {
    font-family: "Roboto", sans-serif;
    margin-bottom: 50px;
@@ -46,6 +65,12 @@ body
    width: 230px;
  }
 
+
+ /**Ebene 3 Ende
+ */
+
+ /**Ebene 4 Start
+ */
  .blocktitelteam {
    font-family: "Roboto", sans-serif;
    font-size: 40px;
@@ -56,6 +81,7 @@ body
    width: 230px;
  }
 
+<<<<<<< HEAD
  .blocktitelfeedback {
    font-family: "Roboto", sans-serif !important;
    font-size: 40px !important;
@@ -74,11 +100,58 @@ body
    font-size: 23px;
    text-transform: uppercase;
  }
+=======
 
- .element > p {
-   font-size: 16px;
-   font-family: "Roboto", sans-serif;
- }
+  /**Ebene 4 Ende
+  */
+
+/**Ebene 5 Start
+*/
+.blocktitelfeedback {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 40px !important;
+  position: absolute !important;
+  font-weight: bold;
+  border-style: dashed;
+  border-color: white;
+  color: white;
+  width: 230px;
+}
+
+   /**Ebene 5 Ende
+   */
+
+/**Ebene 7 Start
+*/
+
+
+ /**Ebene 7 Ende
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body
+  {
+    font-family: monospace;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 6375b905a6cabbdded7e83dfae0c908718ef0e3a
+
 
 
 
