@@ -1,5 +1,11 @@
 /**Ebene Header Start
 */
+.main-nav
+{
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
 
 
 /**Ebene Header Ende
@@ -30,8 +36,18 @@
 /**Ebene 2 Ende
 */
 
+/**Ebene 7 Start
+*/
 
+.row
+ {
+   max-width: 1200px;
+   margin: auto;
+   margin-bottom: 30px !important;
+ }
 
+ /**Ebene 7 Ende
+ */
 
 * {
   margin: 0;
@@ -43,20 +59,8 @@ body
     font-family: monospace;
   }
 
-.row
- {
-   max-width: 1200px;
-   margin: auto;
-   margin-bottom: 30px !important;
- }
 
 
- .main-nav
- {
-   float: right;
-   list-style: none;
-   margin-top: 30px;
- }
 
 
 
