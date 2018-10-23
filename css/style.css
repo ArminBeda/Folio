@@ -1,3 +1,38 @@
+/**Ebene Header Start
+*/
+
+
+/**Ebene Header Ende
+*/
+
+/**Ebene 1 Start
+*/
+
+
+/**Ebene 1 Ende
+*/
+
+/**Ebene 2 Start
+*/
+
+
+.warum-wir {
+  color: #211D1C;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  border-style: dashed;
+  border-color: #211D1C;
+  width: 230px;
+}
+/**Ebene 2 Ende
+*/
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +42,7 @@ body
   {
     font-family: monospace;
   }
+
 .row
  {
    max-width: 1200px;
@@ -24,17 +60,6 @@ body
 
 
 
- .warum-wir {
-   color: #211D1C;
-   text-decoration: none;
-   font-family: "Roboto", sans-serif;
-   margin-bottom: 50px;
-   font-size: 40px;
-   font-weight: bold;
-   border-style: dashed;
-   border-color: #211D1C;
-   width: 230px;
- }
 
 .blocktitelprozess {
    font-family: "Roboto", sans-serif;
