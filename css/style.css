@@ -39,6 +39,9 @@
 /**Ebene 7 Start
 */
 
+
+
+
 .row
  {
    max-width: 1200px;
@@ -48,6 +51,21 @@
 
  /**Ebene 7 Ende
  */
+
+
+ /**Ebene 8 Start
+ */
+.immolog {
+  width: 230px;
+  height: auto;
+}
+
+.
+
+ /**Ebene 8 Ende
+ */
+
+
 
 * {
   margin: 0;
