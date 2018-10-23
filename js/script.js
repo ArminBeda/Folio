@@ -73,19 +73,27 @@ function calculate () {
         writeblock(array,doc);
 
 
+
+
         doc.setProperties({
-            title: 'PDF Title',
+            title: 'Tilgungsplan' + new Date() + ".pdf",
             subject: 'Info about PDF',
             author: 'PDFAuthor',
             keywords: 'generated, javascript, web 2.0, ajax',
             creator: 'My Company'
         });
 
-        var iframe = document.createElement('iframe');
-        iframe.setAttribute('style','position:absolute; top:0;bottom:0;right:0;left:0; height:100%; width:100%');
-        document.body.appendChild(iframe);
-        iframe.src = doc.output('datauristring');
-        doc.save('doc.pdf'); /* download the file immediately on loading */
+        window.open(doc.output('bloburl'), '_blank');
+/*
+        var string = doc.output('datauristring');
+        var iframe = "<iframe id='download' width='100%' height='100%' src='" + string + "'   style='display:grid; position:absolute'></iframe>";
+        var x = window.open();
+        x.document.open();
+        x.document.write(iframe);
+        x.document.close();
+
+        doc.save('a4.pdf')*/
+
 
           }
 
