@@ -587,7 +587,6 @@ body
  /**Ebene 8 Start
          */
 
-<<<<<<< HEAD
    #ebene8 {
     background-color: #FF8B00;
     background-position: center center;
@@ -686,7 +685,7 @@ body
        #ebene8 #result.okay {
            color: darkgreen;
                }
-=======
+
     transition: background-color 0.2s;
 }
 
