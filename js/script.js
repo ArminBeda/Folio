@@ -178,7 +178,7 @@ let validateNachrichtForm = event => {
 
     if (form.phone.value == "" ) {
         okay = false;
-        message += "Geben Sie bitte eine gültige E-Mailadresse ein. <br />";
+        message += "Geben Sie bitte eine gültige Handynummer ein. <br />";
     }
 
 
