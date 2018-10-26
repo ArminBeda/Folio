@@ -1,5 +1,16 @@
 /**Ebene Header Start
 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body
+  {
+    font-family: monospace;
+  }
+
 .main-nav
 {
   float: right;
@@ -7,6 +18,29 @@
   margin-top: 30px;
 }
 
+.main-nav li
+{
+  display: inline-block;
+}
+
+.main-nav li.active a {
+  border: 1px solid white;
+}
+
+.main-nav li a {
+ color:white;
+ text-decoration: none;
+ padding: 5px 20px;
+ font-family: "Roboto", sans-serif;
+ font-size: 15px;
+}
+
+.row
+ {
+   max-width: 1200px;
+   margin: auto;
+   margin-bottom: 30px !important;
+ }
 
 /**Ebene Header Ende
 */
@@ -21,7 +55,6 @@
 /**Ebene 2 Start
 */
 
-
 .warum-wir {
   color: #211D1C;
   text-decoration: none;
@@ -33,161 +66,15 @@
   border-color: #211D1C;
   width: 230px;
 }
-/**Ebene 2 Ende
-*/
 
-/**Ebene 7 Start
-*/
-
-/**Ebene 7 Ende
-*/
-
-/**Ebene 8 Start
-*/
-.imobilalcontakt, .belalemail, .belalphone, .belaladress {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      border-bottom: solid;
+.element > h3 {
+  font-size: 23px;
+  text-transform: uppercase;
 }
 
-.centerBlock {
-  display: block;
-  margin-left: auto;
-  margin-right: auto ;
-}
-
-.phonetitle, .emailtitle {
-  margin-bottom: 0px !important;
-}
-
-.mobilenumber, .emailadresse {
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
-}
-
-.belaladress {
-  font-size: 18px;
-}
-
-
-/**Ebene 8 Ende
-*/
-
-
-
-
-
-
-.row
- {
-   max-width: 1200px;
-   margin: auto;
-   margin-bottom: 30px !important;
- }
-
- /**Ebene 7 Ende
- */
-
-
- /**Ebene 8 Start
- */
-.immolog {
-  width: 230px;
-  height: auto;
-  background-image: radial-gradient(circle farthest-side, white,transparent);
-  display: inline-block;
-}
-
-.belaltext {
-  font-size: 48px;
-}
-
-
-
-
-
- /**Ebene 8 Ende
- */
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body
-  {
-    font-family: monospace;
-  }
-
-
-
-
-
-
-
-.blocktitelprozess {
-   font-family: "Roboto", sans-serif;
-   margin-bottom: 50px;
-   font-size: 40px;
-   font-weight: bold;
-   border-style: dashed;
-   background-color: #FF8B00;
-   width: 230px;
- }
-
- .blocktitelteam {
-   font-family: "Roboto", sans-serif;
-   font-size: 40px;
-   font-weight: bold;
-   border-style: dashed;
-   border-color: white;
-   color: white;
-   width: 230px;
- }
-
- .blocktitelfeedback {
-   font-family: "Roboto", sans-serif !important;
-   font-size: 40px !important;
-   position: absolute !important;
-   font-weight: bold;
-   border-style: dashed;
-   border-color: white;
-   color: white;
-   width: 230px;
- }
-
-
- .element > h3 {
-   font-size: 23px;
-   text-transform: uppercase;
- }
-
- .element > p {
-   font-size: 16px;
-   font-family: "Roboto", sans-serif;
- }
-
-
-
- .main-nav li
- {
-   display: inline-block;
- }
-
- .main-nav li.active a {
-   border: 1px solid white;
- }
-
-.main-nav li a {
-  color:white;
-  text-decoration: none;
-  padding: 5px 20px;
+.element > p {
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
 }
 
 .der-prozess .col-md-6{
@@ -200,6 +87,83 @@ body
     background-color: #FF8B00;
     margin-bottom: 120px;
 }
+
+
+/**Ebene 2 Ende
+*/
+
+/**Ebene 3 Start
+*/
+.blocktitelprozess {
+   font-family: "Roboto", sans-serif;
+   margin-bottom: 50px;
+   font-size: 40px;
+   font-weight: bold;
+   border-style: dashed;
+   background-color: #FF8B00;
+   width: 230px;
+ }
+
+
+ /**Ebene 3 Ende
+ */
+
+ /**Ebene 4 Start
+ */
+ .blocktitelteam {
+   font-family: "Roboto", sans-serif;
+   font-size: 40px;
+   font-weight: bold;
+   border-style: dashed;
+   border-color: white;
+   color: white;
+   width: 230px;
+ }
+
+
+  /**Ebene 4 Ende
+  */
+
+/**Ebene 5 Start
+*/
+.blocktitelfeedback {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 40px !important;
+  position: absolute !important;
+  font-weight: bold;
+  border-style: dashed;
+  border-color: white;
+  color: white;
+  width: 230px;
+}
+
+   /**Ebene 5 Ende
+   */
+
+/**Ebene 7 Start
+*/
+
+
+ /**Ebene 7 Ende
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .start
 {
@@ -313,15 +277,6 @@ button {
   padding-left: 5px;
   padding-right: 5px;
   height: 100%;
-}
-
-.bbn > a {
-  color: white !important;
-}
-
-.bbn > a:hover {
-  color: white !important;
-  text-decoration: none !important;
 }
 
 .bbn-two {
