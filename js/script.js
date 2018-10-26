@@ -212,3 +212,18 @@ let validateForm = event => {
     event.preventDefault();
     //}
 }
+
+//Ebene 8 Formular
+/**
+* Funktion zur Überprüfung des Kontaktformulars. Wird beim Abschicken des
+* Formulars aufgerufen.
+*/
+
+
+
+
+//Ebene 8 Formular
+/**
+* Funktion zur Überprüfung des Kontaktformulars. Wird beim Abschicken des
+* Formulars aufgerufen.
+*/

@@ -669,12 +669,11 @@
 
               <!--Fragebogen-->
               <div class="col-md-6">
-
-                          <form
-                           onsubmit = "validateForm(event)"
-                           action   = "antrag.php"
-                           method   = "POST"
-                       >
+                <form
+                    onsubmit = "validateForm2(event)"
+                    action   = "contact-form2.php"
+                    method   = "POST"
+                >
                            <!-- Vorname und Nachname -->
                            <label for="firstname">
                               Persönliche Daten:
@@ -737,10 +736,11 @@
 
                            <!-- Button zum Abschicken des Formulars -->
                            <input type="submit" value="Abschicken" />
+                              <div id="result2"></div>
                        </form>
 
                        <!-- Hier wird das Ergebnis der Prüfung angezeigt -->
-                       <div id="result1"></div>
+
               </div>
             </div class="row">
         </div>
