@@ -150,7 +150,7 @@ function calculate () {
  * Funktion zur Überprüfung des Kontaktformulars. Wird beim Abschicken des
  * Formulars aufgerufen.
  */
-let validateNachrichtForm = event => {
+let validateForm = event => {
     // Variablen für das Prüfergebnis
     let form = event.target;
     let okay = true;

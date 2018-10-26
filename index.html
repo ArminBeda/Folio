@@ -754,11 +754,11 @@
 
           <div class="row">
             <div class="col-md-6">
-          <form
-           onsubmit = "validateNachrichtForm(event)"
-           action   = "contact.php"
-           method   = "POST"
-       >
+              <form
+                  onsubmit = "validateForm(event)"
+                  action   = "contact-form.php"
+                  method   = "POST"
+              >
            <!-- Vorname und Nachname -->
            <label for="firstname">
                Dein Name:
@@ -787,7 +787,7 @@
                Betreff:
            </label>
            <select name="subject">
-               <option selected="selected">Allgemeine Anfrage/option>
+               <option selected="selected">Allgemeine Anfrage</option>
                <option>Frage über den Finanzierung</option>
                <option>Kooperation und Partnerschaft</option>
            </select>
@@ -801,10 +801,11 @@
 
            <!-- Button zum Abschicken des Formulars -->
            <input type="submit" value="Abschicken" />
+           <div id="result"></div>
        </form>
 
        <!-- Hier wird das Ergebnis der Prüfung angezeigt -->
-       <div id="result2"></div>
+
      </div>
 
      <div class="col-md-6">
