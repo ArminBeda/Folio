@@ -11,6 +11,11 @@ body
     font-family: monospace;
   }
 
+  .start
+  {
+    width: auto;
+  }
+
 .main-nav
 {
   float: right;
@@ -40,6 +45,96 @@ body
    max-width: 1200px;
    margin: auto;
    margin-bottom: 30px !important;
+ }
+
+ h1 {
+   color: white;
+   font-size: 70px;
+   text-align: center;
+   margin-top: 200px;
+ }
+
+ h2 {
+   color: white;
+   font-size: 40px;
+   text-align: center;
+   margin-top: 0px;
+ }
+
+
+ header {
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse2.jpg);
+     height: 100vh;
+     background-size: cover;
+     background-position: center center;
+ }
+
+ .button
+ {
+   margin-top: 30px;
+   text-align: center;
+   height: 40px;
+ }
+
+
+ .bbn
+ { border: 1px solid white;
+   padding: 10px 30px;
+   color: white;
+   text-decoration: none;
+   margin-right: 5px;
+   text-transform: uppercase;
+ }
+
+ button {
+     font-family : inherit;
+     font-family: "Roboto" sans-serif !important;
+ }
+
+ .bbn-one {
+   background-color: #FF8B00;
+   font-size: 16px;
+   width: 250px;
+   padding-left: 5px;
+   padding-right: 5px;
+   height: 100%;
+ }
+
+ .bbn-one:hover {
+   background-color: transparent;
+   background-image: radial-gradient(circle farthest-side, #FF8B00, transparent);
+   transition: all 0.5s ease-in;
+ }
+
+ .bbn-two {
+   font-size: 16px;
+   background-color: transparent;
+   width: 250px;
+   padding-left: 5px;
+   padding-right: 5px;
+   height: 100%;
+
+ }
+
+ .bbn-two:hover {
+   background-color: #FF8B00;
+   transition: all 0.5s ease-in;
+ }
+
+ .logo img {
+   width: 120px;
+   height: auto;
+ }
+
+ .logo {
+   background-image: radial-gradient(circle farthest-side, white,transparent);
+   display: inline-block;
+   padding: 6px;
+ }
+
+ .logo p {
+   text-align: center;
+   font-size: 20px;
  }
 
 /**Ebene Header Ende
@@ -88,6 +183,18 @@ body
     margin-bottom: 120px;
 }
 
+.icon {
+    width: 150px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+
+.icon > img {
+  width: auto;
+  height: 100%;
+}
+
 
 /**Ebene 2 Ende
 */
@@ -103,6 +210,37 @@ body
    background-color: #FF8B00;
    width: 230px;
  }
+
+ .number {
+   font-size: 126px;
+   padding: 0px !important;
+   letter-spacing: -20px !important;
+ }
+
+ .prozesstitle {
+   padding-top: 30px;
+   font-size: 36px;
+   margin: 0 !important;
+
+ }
+
+ .prozessbeschreibung {
+   font-size: 18px;
+   margin: 0 !important;
+ }
+
+ .prozessicon {
+   width: 100%;
+ }
+
+ .prozessicon > img {
+   height: 150px;
+   width: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
 
 
  /**Ebene 3 Ende
@@ -120,6 +258,41 @@ body
    width: 230px;
  }
 
+
+ .profil {
+   height: 300px;
+   width: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: white;
+ }
+
+ .teammembers {
+   padding-top: 20px;
+ }
+
+ .profilname {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   color:white;
+   font-size: 36px;
+   font-size: normal;
+   text-align: center;
+ }
+
+ .profiltitle {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   color:white;
+   font-size: 28px;
+   font-size: normal;
+   text-align: center;
+ }
 
   /**Ebene 4 Ende
   */
@@ -148,53 +321,6 @@ body
  */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.start
-{
-  width: auto;
-}
-
-
-h1 {
-  color: white;
-  font-size: 70px;
-  text-align: center;
-  margin-top: 200px;
-}
-
-h2 {
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 0px;
-}
-
-
-
-header {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse2.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-
-
-}
 
 #ebene4 {
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse.jpg);
@@ -229,152 +355,15 @@ header {
 
             }
 
-.number {
-  font-size: 126px;
-  padding: 0px !important;
-  letter-spacing: -20px !important;
-}
 
 
-.prozesstitle {
-  padding-top: 30px;
-  font-size: 36px;
-  margin: 0 !important;
-
-}
-
-.prozessbeschreibung {
-  font-size: 18px;
-  margin: 0 !important;
-}
-
-.button
-{
-  margin-top: 30px;
-  text-align: center;
-  height: 40px;
-}
 
 
-.bbn
-{ border: 1px solid white;
-  padding: 10px 30px;
-  color: white;
-  text-decoration: none;
-  margin-right: 5px;
-  text-transform: uppercase;
-}
-
-button {
-    font-family : inherit;
-    font-family: "Roboto" sans-serif !important;
-}
-
-.bbn-one {
-  background-color: #FF8B00;
-  font-size: 16px;
-  width: 250px;
-  padding-left: 5px;
-  padding-right: 5px;
-  height: 100%;
-}
-
-.bbn-two {
-  font-size: 16px;
-  background-color: transparent;
-  width: 250px;
-  padding-left: 5px;
-  padding-right: 5px;
-  height: 100%;
-
-}
-
-.bbn-two:hover {
-  background-color: #FF8B00;
-  transition: all 0.5s ease-in;
-}
-
-.icon {
-    width: 150px;
-    height: 90px;
-    margin-bottom: 20px;
-}
 
 
-.icon > img {
-  width: auto;
-  height: 100%;
-}
-
-.prozessicon {
-  width: 100%;
-}
-
-.prozessicon > img {
-  height: 150px;
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
-.bbn-one:hover {
-  background-color: transparent;
-  background-image: radial-gradient(circle farthest-side, #FF8B00, transparent);
-  transition: all 0.5s ease-in;
-}
 
-.logo img {
-  width: 120px;
-  height: auto;
-}
-
-.logo {
-  background-image: radial-gradient(circle farthest-side, white,transparent);
-  display: inline-block;
-  padding: 6px;
-}
-
-.logo p {
-  text-align: center;
-  font-size: 20px;
-}
-
-.profil {
-  height: 300px;
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: white;
-}
-
-.teammembers {
-  padding-top: 20px;
-}
-
-.profilname {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color:white;
-  font-size: 36px;
-  font-size: normal;
-  text-align: center;
-}
-
-.profiltitle {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color:white;
-  font-size: 28px;
-  font-size: normal;
-  text-align: center;
-}
 
 .carousel-inner img{
   width: 150px;
