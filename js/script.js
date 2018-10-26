@@ -133,18 +133,13 @@ function calculate () {
     function changeRange() {
       let range = document.getElementById("rechnungrange");
       let monat = range.value;
-
       let selected = document.getElementById("ranger" + monat);
-      console.log(selected);
       selected.selected = "selected";
 
     }
 
     function changeSelect() {
       let select = document.getElementById("calcLaufzeit");
-      console.log(select.value);
       let range = document.getElementById("rechnungrange");
-      console.log(range.value);
       range.value = select.options[select.selectedIndex].value;
-      console.log(range.value);
     }
