@@ -141,5 +141,5 @@ function calculate () {
     function changeSelect() {
       let select = document.getElementById("calcLaufzeit");
       let range = document.getElementById("rechnungrange");
-      range.value = select.options[select.selectedIndex].value;
+      range.value = select.options[select.selectedIndex].value;R
     }
