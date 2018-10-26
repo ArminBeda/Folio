@@ -188,6 +188,14 @@ let validateNachrichtForm = event => {
         message += "Geben Sie bitte eine Nachricht ein. <br />";
     }
 
+
+        // Eine Betreff mus vorhanden sein
+        if (form.message.subject == "") {
+            okay = false;
+            message += "Geben Sie bitte eine Nachricht ein. <br />";
+        }
+
+
     // Ergebnis anzeigen
     let resultElement = document.getElementById("result");
 
