@@ -624,29 +624,29 @@
                  </div>
                    <div class="col-md-6 side-by-side">
                      Laufzeit:
-                     <select id="calcLaufzeit">
-                   <option value="6">6 Monate</option>
-                   <option value="12">12 Monate</option>
-                   <option value="18">18 Monate</option>
-                   <option value="24">24 Monate</option>
-                   <option value="30">30 Monate</option>
-                   <option value="36">36 Monate</option>
-                   <option value="42">42 Monate</option>
-                   <option value="48">48 Monate</option>
-                   <option value="54">54 Monate</option>
-                   <option value="60">60 Monate</option>
-                   <option value="66">66 Monate</option>
-                   <option value="72">72 Monate</option>
-                   <option value="78">78 Monate</option>
-                   <option value="84">84 Monate</option>
-                   <option value="90">90 Monate</option>
-                   <option value="96">96 Monate</option>
-                   <option value="102">102 Monate</option>
-                   <option value="108">108 Monate</option>
-                   <option value="114">114 Monate</option>
-                   <option value="120">120 Monate</option>
+                     <select id="calcLaufzeit" oninput="changeSelect()">
+                   <option id="ranger6" value="6">6 Monate</option>
+                   <option id="ranger12" value="12">12 Monate</option>
+                   <option id="ranger18" value="18">18 Monate</option>
+                   <option id="ranger24" value="24">24 Monate</option>
+                   <option id="ranger30" value="30">30 Monate</option>
+                   <option id="ranger36" value="36">36 Monate</option>
+                   <option id="ranger42" value="42">42 Monate</option>
+                   <option id="ranger48" value="48">48 Monate</option>
+                   <option id="ranger54" value="54">54 Monate</option>
+                   <option id="ranger60" value="60">60 Monate</option>
+                   <option id="ranger66" value="66">66 Monate</option>
+                   <option id="ranger72" value="72">72 Monate</option>
+                   <option id="ranger78" value="78">78 Monate</option>
+                   <option id="ranger84" value="84">84 Monate</option>
+                   <option id="ranger90" value="90">90 Monate</option>
+                   <option id="ranger96" value="96">96 Monate</option>
+                   <option id="ranger102" value="102">102 Monate</option>
+                   <option id="ranger108" value="108">108 Monate</option>
+                   <option id="ranger118" value="114">114 Monate</option>
+                   <option id="ranger120" value="120">120 Monate</option>
                  </select>
-                 <input type="range" class="rechnungrange" min="0" max="120" step="6.0" >
+                 <input type="range" id="rechnungrange" oninput="changeRange()" class="rechnungrange" min="6" max="120" step="6" value="6">
                 </div>
 
               </div>

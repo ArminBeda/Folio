@@ -129,3 +129,21 @@ function calculate () {
         }
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     }
+
+    function changeRange() {
+      let range = document.getElementById("rechnungrange");
+      let monat = range.value;
+
+      let selected = document.getElementById("ranger" + monat);
+      console.log(selected);
+
+    }
+
+    function changeSelect() {
+      let select = document.getElementById("calcLaufzeit");
+      console.log(select.value);
+      let range = document.getElementById("rechnungrange");
+      console.log(range.value);
+      range.value = select.options[select.selectedIndex].value;
+      console.log(range.value);
+    }
