@@ -38,6 +38,7 @@ body
  padding: 5px 20px;
  font-family: "Roboto", sans-serif;
  font-size: 15px;
+
 }
 
 .row
@@ -615,7 +616,7 @@ html {
 #ebene7 form > *,
 #ebene7 form > .side-by-side > * {
     display: block;
-    box-sizing: border-box;
+    box-sizing: box;
     width: 100%;
 }
 
@@ -796,4 +797,46 @@ html {
 
 #ebene8 #result.okay {
     color: darkgreen;
+}
+
+
+.imobilalcontakt, .belalemail, .belalphone, .belaladress {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: solid;
+}
+
+ .phonetitle, .emailtitle {
+  margin-bottom: 0px !important;
+}
+
+ .mobilenumber, .emailadresse {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+ .centerBlock {
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+
+
+ .belaladress {
+  font-size: 18px;
+}
+
+
+ .immolog {
+   width: 230px;
+   height: auto;
+   background-image: radial-gradient(circle farthest-side, white,transparent);
+   display: inline-block;
+ }
+
+ .belaltext {
+  font-size: 48px;
 }
