@@ -136,6 +136,7 @@ function calculate () {
 
       let selected = document.getElementById("ranger" + monat);
       console.log(selected);
+      selected.selected = "selected";
 
     }
 
