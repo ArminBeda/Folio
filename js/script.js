@@ -175,7 +175,6 @@ let validateNachrichtForm = event => {
     }
 
     // Phone muss vorhanden sein und zusätzlich ein @ enthalten
-
     if (form.phone.value == "" ) {
         okay = false;
         message += "Geben Sie bitte eine gültige Handynummer ein. <br />";

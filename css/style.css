@@ -138,6 +138,34 @@ body
    font-size: 20px;
  }
 
+ /**Ebene7 antraform
+ /*
+  * Allgemeine Angaben
+  */
+ @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+ html {
+     font-family: 'Quicksand', sans-serif;
+     font-size: 12pt;
+ }
+
+ /*
+  * Basis-Layout des Formulars
+  */
+
+
+ /**Ebene8 supports
+ /*
+  * Allgemeine Angaben
+  */
+ @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+ html {
+     font-family: 'Quicksand', sans-serif;
+     font-size: 12pt;
+ }
+
+
 /**Ebene Header Ende
 */
 
@@ -150,6 +178,10 @@ body
 
 /**Ebene 2 Start
 */
+
+#ebene2 {
+      padding: 50px;
+            }
 
 .warum-wir {
   color: #211D1C;
@@ -202,6 +234,16 @@ body
 
 /**Ebene 3 Start
 */
+
+#ebene3 {
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/ebene3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 50px;
+            }
+
+
 .blocktitelprozess {
    font-family: "Roboto", sans-serif;
    margin-bottom: 50px;
@@ -249,6 +291,18 @@ body
 
  /**Ebene 4 Start
  */
+
+ #ebene4 {
+   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse.jpg);
+   background-size: cover;
+   background-position: center center;
+   border-top-color: white;
+   border-top-width: thick;
+   border-top-style: solid;
+   padding: 50px;
+
+             }
+
  .blocktitelteam {
    font-family: "Roboto", sans-serif;
    font-size: 40px;
@@ -295,6 +349,17 @@ body
    text-align: center;
  }
 
+ .profilspezial {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   color:white;
+   font-size: 22px;
+   font-weight: bold;
+   font-size: normal;
+   text-align: center;
+ }
+
   /**Ebene 4 Ende
   */
 
@@ -311,60 +376,12 @@ body
   width: 230px;
 }
 
-   /**Ebene 5 Ende
-   */
-
-/**Ebene 7 Start
-*/
-
-
- /**Ebene 7 Ende
- */
-
-
-
-#ebene4 {
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse.jpg);
+.kundepic {
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde1.jpg);
   background-size: cover;
   background-position: center center;
-  border-top-color: white;
-  border-top-width: thick;
-  border-top-style: solid;
-  padding: 50px;
-
-            }
-
-#ebene2 {
-      padding: 50px;
-            }
-
-#ebene3 {
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/ebene3.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  padding: 50px;
-            }
-
-#ebene8 {
-  background-color: #FF8B00;
-  background-position: center center;
-  border-top-color: white;
-  border-top-width: thick;
-  border-top-style: solid;
-  padding: 50px;
-
-            }
-
-
-
-
-
-
-
-
-
-
+  height: 500px;
+}
 
 .carousel-inner img{
   width: 150px;
@@ -373,15 +390,6 @@ body
   border: 3px solid white;
   padding: 5px;
 }
-
-.kundepic {
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde1.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 500px;
-}
-
-
 
 
 .carousel-item {
@@ -405,16 +413,14 @@ body
 }
 
 
-.profilspezial {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color:white;
-  font-size: 22px;
-  font-weight: bold;
-  font-size: normal;
-  text-align: center;
+.feedbackslide {
+
+  background-size: cover;
+  background-position: center center;
+  height: 80vh;
+  background-color:rgba(238,118,0,0.85);
 }
+
 
 /* Carousel */
 #carouselExampleControls {
@@ -424,57 +430,11 @@ body
 
 }
 
-.feedbackslide {
-
-  background-size: cover;
-  background-position: center center;
-  height: 80vh;
-  background-color:rgba(238,118,0,0.85);
-}
-
-/*
-.slide1 {
-
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde1.jpg);
-
-}
-
-.slide2 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde2.jpg);
-}
-
-.slide3 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde3.jpg);
-}
-
-.slide4 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde4.jpg);
-}
-
-.slide5 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde5.jpg);
-}
-
-.slide6 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde6.jpg);
-}
-
-.slide7 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde7.jpg);
-}
-
-.slide8 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde8.jpg);
-}
-
-.slide9 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde9.jpg);
-}
-*/
 
 .carousel-item > .col-md-4 {
   margin-top: 5%;
 }
+
 
 .kundename {
   display: block;
@@ -509,102 +469,11 @@ body
 
 }
 
+   /**Ebene 5 Ende
+   */
 
-/* Ende Feedbacks */
-
-/* Portfolio */
-.portfoliopic {
-
-  height: 300px;
-  width: 300px;
-  background-size: cover;
-  background-position: center center;
-}
-
-.pic1 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde1.jpg);
-}
-
-.pic2 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde2.jpg);
-}
-
-.pic3 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde3.jpg);
-}
-
-.pic4 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde4.jpg);
-}
-
-.pic5 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde5.jpg);
-}
-
-.pic6 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde6.jpg);
-}
-
-.pic7 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde7.jpg);
-}
-
-.pic8 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde8.jpg);
-}
-
-.pic9 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde9.jpg);
-}
-
-.pic10 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde10.jpg);
-}
-
-.pic11 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde11.jpg);
-}
-
-.pic12 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde12.jpg);
-}
-
-
-
-
-/*Beantragen*/
-.tilgungbutton {
-  width: 100%;
-  background-color: #FF8B00;
-}
-
-.rechnungrange {
-    width: 80% !important;
-    margin-top: 5px;
-    margin-bottom: 0px !important;
-}
-
-.calculator{
-  border-style: solid;
-  border-color: #FF8B00;
-  margin-top: 40px;
-}
-/*Ende Beantragen*/
-
-/**Ebene7 antraform
-/*
- * Allgemeine Angaben
- */
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-
-html {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 12pt;
-}
-
-/*
- * Basis-Layout des Formulars
- */
+/**Ebene 7 Start
+*/
 #ebene7 form {
     max-width: 30em;
 
@@ -696,90 +565,128 @@ html {
 
 
 
-/**Ebene8 supports
-/*
- * Allgemeine Angaben
+.tilgungbutton {
+  width: 100%;
+  background-color: #FF8B00;
+}
+.rechnungrange {
+    width: 80% !important;
+    margin-top: 5px;
+    margin-bottom: 0px !important;
+}
+
+.calculator{
+  border-style: solid;
+  border-color: #FF8B00;
+  margin-top: 40px;
+}
+
+ /**Ebene 7 Ende
  */
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-html {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 12pt;
-}
+ /**Ebene 8 Start
+         */
 
-/*
- * Basis-Layout des Formulars
- */
-#ebene8 form {
-    max-width: 30em;
+<<<<<<< HEAD
+   #ebene8 {
+    background-color: #FF8B00;
+    background-position: center center;
+    border-top-color: white;
+    border-top-width: thick;
+    border-top-style: solid;
+    padding: 50px;
 
-    border: 1px solid #d0d0d0;
-    background: #f0f0f0;
-    padding: 1em;
-}
+               }
 
-#ebene8 form > *,
-#ebene8 form > .side-by-side > * {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-}
+     #ebene8 form {
+     max-width: 30em;
 
-#ebene8 form > .side-by-side {
-    display: flex;
-}
+     border: 1px solid #d0d0d0;
+     background: #f0f0f0;
+     padding: 1em;
+               }
 
-#ebene8 form > .side-by-side > * {
-    margin-right: 0.25em;
-}
+     #ebene8 form > *,
+     #ebene8 form > .side-by-side > * {
+     display: block;
+     box-sizing: border-box;
+     width: 100%;
+               }
 
-#ebene8 form > .side-by-side > *:last-child {
-    margin-right: 0;
-}
+     #ebene8 form > .side-by-side {
+         display: flex;
+               }
 
-/*
- * Gestaltung der Feldbezeichner
- */
-#ebene8 form label {
-    font-weight: bold;
-    margin-top: 1em;
-}
+     #ebene8 form > .side-by-side > * {
+         margin-right: 0.25em;
+               }
 
-#ebene8 form label:first-child {
-    margin-top: 0;
-}
+      #ebene8 form > .side-by-side > *:last-child {
+          margin-right: 0;
+               }
 
-#ebene8 form label .required {
-    color: darkred;
-}
+         /*
+          * Gestaltung der Feldbezeichner
+          */
+       #ebene8 form label {
+         font-weight: bold;
+        margin-top: 1em;
+               }
 
-/*
- * Gestaltung der Formularfelder
- */
-#ebene8 input,
-#ebene8 textarea,
-#ebene8 select {
-    border: 1px solid #bebebe;
-    padding: 0.5em;
-    margin: 0;
-    outline: none;
-}
+       #ebene8 form label:first-child {
+        margin-top: 0;
+               }
 
-#ebene8 textarea {
-    height: 12em;
-}
+       #ebene8 form label .required {
+         color: darkred;
+               }
 
-/*
- * Der Button zum Abschicken des Formulars
- */
-#ebene8 input[type="submit"] {
-    margin-top: 2em;
-    width: auto;
+         /*
+          * Gestaltung der Formularfelder
+          */
+       #ebene8 input,
+       #ebene8 textarea,
+       #ebene8 select {
+         border: 1px solid #bebebe;
+         padding: 0.5em;
+         margin: 0;
+         outline: none;
+               }
 
-    background-color: #2e2f30;
-    color: white;
-    font-weight: bold;
+       #ebene8 textarea {
+         height: 12em;
+               }
 
+         /*
+          * Der Button zum Abschicken des Formulars
+          */
+        #ebene8 input[type="submit"] {
+           margin-top: 2em;
+           width: auto;
+
+           background-color: #2e2f30;
+           color: white;
+           font-weight: bold;
+
+            transition: background-color 0.2s;
+               }
+
+        #ebene8 input[type="submit"]:hover {
+           background-color: #2868A8;
+               }
+
+           /*
+            * Element mit dem Prüfergebnis
+            */
+        #ebene8 #result {
+           margin-top: 1em;
+           color: red;
+               }
+
+       #ebene8 #result.okay {
+           color: darkgreen;
+               }
+=======
     transition: background-color 0.2s;
 }
 
