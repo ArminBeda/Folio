@@ -710,11 +710,11 @@
                         </div>
                         </br>
                         <div class="side-by-side">
-                          <input name="plz" type="text" placeholder="PLZ" />
-                          <input name="stadt" type="text" placeholder="Stadt" />
+                          <input name="plz" type="text" placeholder="PLZ*" />
+                          <input name="stadt" type="text" placeholder="Stadt*" />
                         </div>
                           </br>
-                        <input name="land" type="text" placeholder="Land" />
+                        <input name="land" type="text" placeholder="Land*" />
 
                         <!-- GPS Cooridnaten -->
                         <label for="immo">
@@ -737,6 +737,7 @@
                            <!-- Button zum Abschicken des Formulars -->
                            <input type="submit" value="Abschicken" />
                               <div id="result2"></div>
+                              <button href="" id="antraghiddenbutton" class="bbn tilgungbutton" style="display:none" onclick="calculate ()">Tilgungsplan Herunterladen</button>
                        </form>
 
                        <!-- Hier wird das Ergebnis der Prüfung angezeigt -->

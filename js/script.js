@@ -188,12 +188,14 @@ function calculate () {
 
  // Ergebnis anzeigen
  let resultElement = document.getElementById("result2");
-
+ let antrag = document.getElementById("antraghiddenbutton");
  if (okay) {
-     message = "Vielen Dank für Ihre Nachricht!";
+     message = "Vielen Dank für Ihre Antrag! +\n Wir setzen uns mit Ihnen bald in Verbindung. +\n Unten können Sie Ihre Tilgungsplan herunterladen.";
      resultElement.classList.add("okay");
+     antraghiddenbutton.style.display = "block"
  } else {
-     resultElement.classList.remove("okay");
+    resultElement.classList.remove("okay");
+    antraghiddenbutton.style.display = "none"
  }
 
  resultElement.innerHTML = message;
