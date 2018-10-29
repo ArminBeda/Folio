@@ -160,23 +160,9 @@ body
   */
  @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-<<<<<<< HEAD
- .blocktitelfeedback {
-   font-family: "Roboto", sans-serif ;
-   font-size: 40px ;
-   font-weight: bold;
-   border-style: dashed;
-   border-color: white;
-   color: white ;
-   width: 230px;
-   margin-top: 50px;
-   margin-left: 50px;
-
-=======
  html {
      font-family: 'Quicksand', sans-serif;
      font-size: 12pt;
->>>>>>> aad8058eef6220728e35b8afc52d64748b24e72a
  }
 
 
@@ -246,22 +232,8 @@ body
 /**Ebene 2 Ende
 */
 
-<<<<<<< HEAD
-#ebene5 {
-  background-color: darkorange;
-  border-top-color: darkorange;
-  color: white;
-            }
-
-
-
-#ebene2 {
-      padding: 50px;
-            }
-=======
 /**Ebene 3 Start
 */
->>>>>>> aad8058eef6220728e35b8afc52d64748b24e72a
 
 #ebene3 {
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/ebene3.jpg);
