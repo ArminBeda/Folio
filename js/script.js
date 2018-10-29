@@ -129,3 +129,148 @@ function calculate () {
         }
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     }
+
+    function changeRange() {
+      let range = document.getElementById("rechnungrange");
+      let monat = range.value;
+      let selected = document.getElementById("ranger" + monat);
+      selected.selected = "selected";
+
+    }
+
+    function changeSelect() {
+      let select = document.getElementById("calcLaufzeit");
+      let range = document.getElementById("rechnungrange");
+      range.value = select.options[select.selectedIndex].value;R
+    }
+
+
+    //Ebene 8 Formular
+    /**
+ * Funktion zur Überprüfung des Kontaktformulars. Wird beim Abschicken des
+ * Formulars aufgerufen.
+ */
+ let validateForm2 = event => {
+ // Variablen für das Prüfergebnis
+ let form = event.target;
+ let okay = true;
+ let message = "";
+
+ if (form.firstname.value == "") {
+     okay = false;
+     message += "Geben Sie bitte Ihren Vornamen ein. <br />";
+ }
+ if (form.lastname.value == "") {
+     okay = false;
+     message += "Geben Sie bitte Ihren Nachnamen ein. <br />";
+ }
+ if (form.email.value == "") {
+     okay = false;
+     message += "Geben Sie bitte eine gültige E-Mail Addresse ein. <br />";
+ }
+ if (form.handynummer.value == "") {
+     okay = false;
+     message += "Geben Sie bitte ihre Handynummer an. <br />";
+ }
+ if (form.strasse.value == "") {
+     okay = false;
+     message += "Geben Sie bitte den Namen ihrer Straße an. <br />";
+ }
+ if (form.hausnummer.value == "") {
+     okay = false;
+     message += "Geben Sie bitte ihre Hausnummer an. <br />";
+ }
+ if (form.land.value == "") {
+     okay = false;
+     message += "Geben Sie bitte ihren Wohnort an. <br />";
+ }
+
+
+ // Ergebnis anzeigen
+ let resultElement = document.getElementById("result2");
+
+ if (okay) {
+     message = "Vielen Dank für Ihre Nachricht!";
+     resultElement.classList.add("okay");
+ } else {
+     resultElement.classList.remove("okay");
+ }
+
+ resultElement.innerHTML = message;
+
+ // Formular nicht abschicken
+ //if (!okay) {
+ event.preventDefault();
+ //}
+ }
+
+let validateForm = event => {
+    // Variablen für das Prüfergebnis
+    let form = event.target;
+    let okay = true;
+    let message = "";
+
+    // Vorname muss vorhanden sein
+    if (form.firstname.value == "") {
+        okay = false;
+        message += "Geben Sie bitte Ihren Vornamen ein. <br />";
+    }
+
+    // Nachname muss vorhanden sein
+    if (form.lastname.value == "") {
+        okay = false;
+        message += "Geben Sie bitte Ihren Nachnamen ein. <br />";
+    }
+
+    // E-Mail muss vorhanden sein und zusätzlich ein @ enthalten
+    if (form.email.value == "" || !form.email.value.includes("@")) {
+        okay = false;
+        message += "Geben Sie bitte eine gültige E-Mailadresse ein. <br />";
+    }
+
+    // Eine Nachricht muss vorhanden sein
+    if (form.message.value == "") {
+        okay = false;
+        message += "Geben Sie bitte eine Nachricht ein. <br />";
+    }
+
+
+        // Eine Betreff mus vorhanden sein
+        if (form.message.subject == "") {
+            okay = false;
+            message += "Geben Sie bitte eine Nachricht ein. <br />";
+        }
+
+
+    // Ergebnis anzeigen
+    let resultElement = document.getElementById("result");
+
+    if (okay) {
+        message = "Vielen Dank für Ihre Nachricht!";
+        resultElement.classList.add("okay");
+    } else {
+        resultElement.classList.remove("okay");
+    }
+
+    resultElement.innerHTML = message;
+
+    // Formular nicht abschicken
+    //if (!okay) {
+    event.preventDefault();
+    //}
+}
+
+//Ebene 8 Formular
+/**
+* Funktion zur Überprüfung des Kontaktformulars. Wird beim Abschicken des
+* Formulars aufgerufen.
+*/
+
+
+
+
+//Ebene 8 Formular
+/**
+* Funktion zur Überprüfung des Kontaktformulars. Wird beim Abschicken des
+* Formulars aufgerufen.
+*/

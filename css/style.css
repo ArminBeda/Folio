@@ -1,11 +1,183 @@
 /**Ebene Header Start
 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body
+  {
+    font-family: monospace;
+  }
+
+  .start
+  {
+    width: auto;
+  }
+
 .main-nav
 {
   float: right;
   list-style: none;
   margin-top: 30px;
 }
+
+.main-nav li
+{
+  display: inline-block;
+}
+
+.main-nav li.active a {
+  border: 1px solid white;
+}
+
+.main-nav li a {
+ color:white;
+ text-decoration: none;
+ padding: 5px 20px;
+ font-family: "Roboto", sans-serif;
+ font-size: 15px;
+
+}
+
+.row
+ {
+   max-width: 1200px;
+   margin: auto;
+   margin-bottom: 30px !important;
+ }
+
+ h1 {
+   color: white;
+   font-size: 70px;
+   text-align: center;
+   margin-top: 200px;
+ }
+
+ h2 {
+   color: white;
+   font-size: 40px;
+   text-align: center;
+   margin-top: 0px;
+ }
+
+
+ header {
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse2.jpg);
+     height: 100vh;
+     background-size: cover;
+     background-position: center center;
+ }
+
+ .button
+ {
+   margin-top: 30px;
+   text-align: center;
+   height: 40px;
+ }
+
+
+ .bbn
+ { border: 1px solid white;
+   padding: 10px 30px;
+   color: white;
+   text-decoration: none;
+   margin-right: 5px;
+   text-transform: uppercase;
+ }
+
+ button {
+     font-family : inherit;
+     font-family: "Roboto" sans-serif !important;
+ }
+
+ .bbn-one {
+   background-color: #FF8B00;
+   font-size: 16px;
+   width: 250px;
+   padding-left: 5px;
+   padding-right: 5px;
+   height: 100%;
+ }
+
+ .bbn-one:hover {
+   background-color: transparent;
+   background-image: radial-gradient(circle farthest-side, #FF8B00, transparent);
+   transition: all 0.5s ease-in;
+ }
+
+ .bbn-two {
+   font-size: 16px;
+   background-color: transparent;
+   width: 250px;
+   padding-left: 5px;
+   padding-right: 5px;
+   height: 100%;
+
+ }
+
+ .bbn-two:hover {
+   background-color: #FF8B00;
+   transition: all 0.5s ease-in;
+ }
+
+ .logo img {
+   width: 120px;
+   height: auto;
+ }
+
+ .logo {
+   background-image: radial-gradient(circle farthest-side, white,transparent);
+   display: inline-block;
+   padding: 6px;
+ }
+
+ .logo p {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ /**Ebene7 antraform
+ /*
+  * Allgemeine Angaben
+  */
+ @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+ html {
+     font-family: 'Quicksand', sans-serif;
+     font-size: 12pt;
+ }
+
+ /*
+  * Basis-Layout des Formulars
+  */
+
+
+ /**Ebene8 supports
+ /*
+  * Allgemeine Angaben
+  */
+ @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+<<<<<<< HEAD
+ .blocktitelfeedback {
+   font-family: "Roboto", sans-serif ;
+   font-size: 40px ;
+   font-weight: bold;
+   border-style: dashed;
+   border-color: white;
+   color: white ;
+   width: 230px;
+   margin-top: 50px;
+   margin-left: 50px;
+
+=======
+ html {
+     font-family: 'Quicksand', sans-serif;
+     font-size: 12pt;
+>>>>>>> aad8058eef6220728e35b8afc52d64748b24e72a
+ }
 
 
 /**Ebene Header Ende
@@ -21,6 +193,9 @@
 /**Ebene 2 Start
 */
 
+#ebene2 {
+      padding: 50px;
+            }
 
 .warum-wir {
   color: #211D1C;
@@ -33,163 +208,15 @@
   border-color: #211D1C;
   width: 230px;
 }
-/**Ebene 2 Ende
-*/
 
-/**Ebene 7 Start
-*/
-
-/**Ebene 7 Ende
-*/
-
-/**Ebene 8 Start
-*/
-.imobilalcontakt, .belalemail, .belalphone, .belaladress {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      border-bottom: solid;
+.element > h3 {
+  font-size: 23px;
+  text-transform: uppercase;
 }
 
-.centerBlock {
-  display: block;
-  margin-left: auto;
-  margin-right: auto ;
-}
-
-.phonetitle, .emailtitle {
-  margin-bottom: 0px !important;
-}
-
-.mobilenumber, .emailadresse {
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
-}
-
-.belaladress {
-  font-size: 18px;
-}
-
-
-/**Ebene 8 Ende
-*/
-
-
-
-
-
-
-.row
- {
-   max-width: 1200px;
-   margin: auto;
-   margin-bottom: 30px !important;
- }
-
- /**Ebene 7 Ende
- */
-
-
- /**Ebene 8 Start
- */
-.immolog {
-  width: 230px;
-  height: auto;
-  background-image: radial-gradient(circle farthest-side, white,transparent);
-  display: inline-block;
-}
-
-.belaltext {
-  font-size: 48px;
-}
-
-
-
-
-
- /**Ebene 8 Ende
- */
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body
-  {
-    font-family: monospace;
-  }
-
-
-
-
-
-
-
-.blocktitelprozess {
-   font-family: "Roboto", sans-serif;
-   margin-bottom: 50px;
-   font-size: 40px;
-   font-weight: bold;
-   border-style: dashed;
-   background-color: #FF8B00;
-   width: 230px;
- }
-
- .blocktitelteam {
-   font-family: "Roboto", sans-serif;
-   font-size: 40px;
-   font-weight: bold;
-   border-style: dashed;
-   border-color: white;
-   color: white;
-   width: 230px;
- }
-
- .blocktitelfeedback {
-   font-family: "Roboto", sans-serif ;
-   font-size: 40px ;
-   font-weight: bold;
-   border-style: dashed;
-   border-color: white;
-   color: white ;
-   width: 230px;
-   margin-top: 50px;
-   margin-left: 50px;
-
- }
-
-
- .element > h3 {
-   font-size: 23px;
-   text-transform: uppercase;
- }
-
- .element > p {
-   font-size: 16px;
-   font-family: "Roboto", sans-serif;
- }
-
-
-
- .main-nav li
- {
-   display: inline-block;
- }
-
- .main-nav li.active a {
-   border: 1px solid white;
- }
-
-.main-nav li a {
-  color:white;
-  text-decoration: none;
-  padding: 5px 20px;
+.element > p {
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
 }
 
 .der-prozess .col-md-6{
@@ -201,152 +228,6 @@ body
     border-style: dashed;
     background-color: #FF8B00;
     margin-bottom: 120px;
-}
-
-.start
-{
-  width: auto;
-}
-
-
-h1 {
-  color: white;
-  font-size: 70px;
-  text-align: center;
-  margin-top: 200px;
-}
-
-h2 {
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 0px;
-}
-
-
-
-header {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse2.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-
-
-}
-
-#ebene4 {
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse.jpg);
-  background-size: cover;
-  background-position: center center;
-  border-top-color: white;
-  border-top-width: thick;
-  border-top-style: solid;
-  padding: 50px;
-
-            }
-
-#ebene5 {
-  background-color: darkorange;
-  border-top-color: darkorange;
-  color: white;
-            }
-
-
-
-#ebene2 {
-      padding: 50px;
-            }
-
-#ebene3 {
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/ebene3.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  padding: 50px;
-            }
-
-#ebene8 {
-  background-color: #FF8B00;
-  background-position: center center;
-  border-top-color: white;
-  border-top-width: thick;
-  border-top-style: solid;
-  padding: 50px;
-
-            }
-
-.number {
-  font-size: 126px;
-  padding: 0px !important;
-  letter-spacing: -20px !important;
-}
-
-
-.prozesstitle {
-  padding-top: 30px;
-  font-size: 36px;
-  margin: 0 !important;
-
-}
-
-.prozessbeschreibung {
-  font-size: 18px;
-  margin: 0 !important;
-}
-
-.button
-{
-  margin-top: 30px;
-  text-align: center;
-  height: 40px;
-}
-
-
-.bbn
-{ border: 1px solid white;
-  padding: 10px 30px;
-  color: white;
-  text-decoration: none;
-  margin-right: 5px;
-  text-transform: uppercase;
-}
-
-button {
-    font-family : inherit;
-    font-family: "Roboto" sans-serif !important;
-}
-
-.bbn-one {
-  background-color: #FF8B00;
-  font-size: 16px;
-  width: 250px;
-  padding-left: 5px;
-  padding-right: 5px;
-  height: 100%;
-}
-
-.bbn > a {
-  color: white !important;
-}
-
-.bbn > a:hover {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.bbn-two {
-  font-size: 16px;
-  background-color: transparent;
-  width: 250px;
-  padding-left: 5px;
-  padding-right: 5px;
-  height: 100%;
-
-}
-
-.bbn-two:hover {
-  background-color: #FF8B00;
-  transition: all 0.5s ease-in;
 }
 
 .icon {
@@ -361,82 +242,166 @@ button {
   height: 100%;
 }
 
-.prozessicon {
-  width: 100%;
-}
 
-.prozessicon > img {
-  height: 150px;
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+/**Ebene 2 Ende
+*/
+
+<<<<<<< HEAD
+#ebene5 {
+  background-color: darkorange;
+  border-top-color: darkorange;
+  color: white;
+            }
 
 
-.bbn-one:hover {
-  background-color: transparent;
-  background-image: radial-gradient(circle farthest-side, #FF8B00, transparent);
-  transition: all 0.5s ease-in;
-}
 
-.logo img {
-  width: 120px;
-  height: auto;
-}
+#ebene2 {
+      padding: 50px;
+            }
+=======
+/**Ebene 3 Start
+*/
+>>>>>>> aad8058eef6220728e35b8afc52d64748b24e72a
 
-.logo {
-  background-image: radial-gradient(circle farthest-side, white,transparent);
-  display: inline-block;
-  padding: 6px;
-}
+#ebene3 {
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/ebene3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 50px;
+            }
 
-.logo p {
-  text-align: center;
-  font-size: 20px;
-}
 
-.profil {
-  height: 300px;
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  border-style: solid;
+.blocktitelprozess {
+   font-family: "Roboto", sans-serif;
+   margin-bottom: 50px;
+   font-size: 40px;
+   font-weight: bold;
+   border-style: dashed;
+   background-color: #FF8B00;
+   width: 230px;
+ }
+
+ .number {
+   font-size: 126px;
+   padding: 0px !important;
+   letter-spacing: -20px !important;
+ }
+
+ .prozesstitle {
+   padding-top: 30px;
+   font-size: 36px;
+   margin: 0 !important;
+
+ }
+
+ .prozessbeschreibung {
+   font-size: 18px;
+   margin: 0 !important;
+ }
+
+ .prozessicon {
+   width: 100%;
+ }
+
+ .prozessicon > img {
+   height: 150px;
+   width: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+
+
+ /**Ebene 3 Ende
+ */
+
+ /**Ebene 4 Start
+ */
+
+ #ebene4 {
+   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/starthouse.jpg);
+   background-size: cover;
+   background-position: center center;
+   border-top-color: white;
+   border-top-width: thick;
+   border-top-style: solid;
+   padding: 50px;
+
+             }
+
+ .blocktitelteam {
+   font-family: "Roboto", sans-serif;
+   font-size: 40px;
+   font-weight: bold;
+   border-style: dashed;
+   border-color: white;
+   color: white;
+   width: 230px;
+ }
+
+
+ .profil {
+   height: 300px;
+   width: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50%;
+   border-style: solid;
+   border-color: white;
+ }
+
+ .teammembers {
+   padding-top: 20px;
+ }
+
+ .profilname {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   color:white;
+   font-size: 36px;
+   font-size: normal;
+   text-align: center;
+ }
+
+ .profiltitle {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   color:white;
+   font-size: 28px;
+   font-size: normal;
+   text-align: center;
+ }
+
+ .profilspezial {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   color:white;
+   font-size: 22px;
+   font-weight: bold;
+   font-size: normal;
+   text-align: center;
+ }
+
+  /**Ebene 4 Ende
+  */
+
+/**Ebene 5 Start
+*/
+.blocktitelfeedback {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 40px !important;
+  position: absolute !important;
+  font-weight: bold;
+  border-style: dashed;
   border-color: white;
-}
-
-.teammembers {
-  padding-top: 20px;
-}
-
-.profilname {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color:white;
-  font-size: 36px;
-  font-size: normal;
-  text-align: center;
-}
-
-.profiltitle {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color:white;
-  font-size: 28px;
-  font-size: normal;
-  text-align: center;
-}
-
-.carousel-inner img{
-  width: 150px;
-  height: 150px;
-  border radius:100%;
-  border: 3px solid white;
-  padding: 5px;
+  color: white;
+  width: 230px;
 }
 
 .kundepic {
@@ -446,7 +411,13 @@ button {
   height: 500px;
 }
 
-
+.carousel-inner img{
+  width: 150px;
+  height: 150px;
+  border radius:100%;
+  border: 3px solid white;
+  padding: 5px;
+}
 
 
 .carousel-item {
@@ -470,16 +441,14 @@ button {
 }
 
 
-.profilspezial {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color:white;
-  font-size: 22px;
-  font-weight: bold;
-  font-size: normal;
-  text-align: center;
+.feedbackslide {
+
+  background-size: cover;
+  background-position: center center;
+  height: 80vh;
+  background-color:rgba(238,118,0,0.85);
 }
+
 
 /* Carousel */
 #carouselExampleControls {
@@ -489,57 +458,11 @@ button {
 
 }
 
-.feedbackslide {
-
-  background-size: cover;
-  background-position: center center;
-  height: 80vh;
-  background-color:rgba(238,118,0,0.85);
-}
-
-/*
-.slide1 {
-
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde1.jpg);
-
-}
-
-.slide2 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde2.jpg);
-}
-
-.slide3 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde3.jpg);
-}
-
-.slide4 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde4.jpg);
-}
-
-.slide5 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde5.jpg);
-}
-
-.slide6 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde6.jpg);
-}
-
-.slide7 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde7.jpg);
-}
-
-.slide8 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde8.jpg);
-}
-
-.slide9 {
-    background-image:linear-gradient(rgba(238,118,0,0.85),rgba(238,118,0,0.85)),url(../img/kunde9.jpg);
-}
-*/
 
 .carousel-item > .col-md-4 {
   margin-top: 5%;
 }
+
 
 .kundename {
   display: block;
@@ -574,102 +497,11 @@ button {
 
 }
 
+   /**Ebene 5 Ende
+   */
 
-/* Ende Feedbacks */
-
-/* Portfolio */
-.portfoliopic {
-
-  height: 300px;
-  width: 300px;
-  background-size: cover;
-  background-position: center center;
-}
-
-.pic1 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde1.jpg);
-}
-
-.pic2 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde2.jpg);
-}
-
-.pic3 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde3.jpg);
-}
-
-.pic4 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde4.jpg);
-}
-
-.pic5 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde5.jpg);
-}
-
-.pic6 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde6.jpg);
-}
-
-.pic7 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde7.jpg);
-}
-
-.pic8 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde8.jpg);
-}
-
-.pic9 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde9.jpg);
-}
-
-.pic10 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde10.jpg);
-}
-
-.pic11 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde11.jpg);
-}
-
-.pic12 {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/kunde12.jpg);
-}
-
-
-
-
-/*Beantragen*/
-.tilgungbutton {
-  width: 100%;
-  background-color: #FF8B00;
-}
-
-.rechnungrange {
-    width: 80% !important;
-    margin-top: 5px;
-    margin-bottom: 0px !important;
-}
-
-.calculator{
-  border-style: solid;
-  border-color: #FF8B00;
-  margin-top: 40px;
-}
-/*Ende Beantragen*/
-
-/**Ebene7 antraform
-/*
- * Allgemeine Angaben
- */
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-
-html {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 12pt;
-}
-
-/*
- * Basis-Layout des Formulars
- */
+/**Ebene 7 Start
+*/
 #ebene7 form {
     max-width: 30em;
 
@@ -681,7 +513,7 @@ html {
 #ebene7 form > *,
 #ebene7 form > .side-by-side > * {
     display: block;
-    box-sizing: border-box;
+    box-sizing: box;
     width: 100%;
 }
 
@@ -759,91 +591,164 @@ html {
     color: darkgreen;
 }
 
+.tilgungbutton {
+  width: 100%;
+  background-color: #FF8B00;
+}
+.rechnungrange {
+    width: 80% !important;
+    margin-top: 5px;
+    margin-bottom: 0px !important;
+}
 
+.calculator{
+  border-style: solid;
+  border-color: #FF8B00;
+  margin-top: 40px;
+}
 
-/**Ebene8 supports
-/*
- * Allgemeine Angaben
+ /**Ebene 7 Ende
  */
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-html {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 12pt;
-}
+ /**Ebene 8 Start
+         */
+   .imobilalcontakt, .belalemail, .belalphone, .belaladress {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     border-bottom: solid;
+         }
 
-/*
- * Basis-Layout des Formulars
- */
-#ebene8 form {
-    max-width: 30em;
+    .phonetitle, .emailtitle {
+      margin-bottom: 0px !important;
+         }
 
-    border: 1px solid #d0d0d0;
-    background: #f0f0f0;
-    padding: 1em;
-}
+    .mobilenumber, .emailadresse {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+         }
 
-#ebene8 form > *,
-#ebene8 form > .side-by-side > * {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-}
+    .centerBlock {
+      display: block;
+      margin-left: auto;
+      margin-right: auto ;
+         }
 
-#ebene8 form > .side-by-side {
-    display: flex;
-}
+    .belaladress {
+      font-size: 18px;
+         }
 
-#ebene8 form > .side-by-side > * {
-    margin-right: 0.25em;
-}
 
-#ebene8 form > .side-by-side > *:last-child {
-    margin-right: 0;
-}
+    .immolog {
+      width: 230px;
+      height: auto;
+      background-image: radial-gradient(circle farthest-side, white,transparent);
+      display: inline-block;
+         }
 
-/*
- * Gestaltung der Feldbezeichner
- */
-#ebene8 form label {
-    font-weight: bold;
-    margin-top: 1em;
-}
+    .belaltext {
+      font-size: 48px;
+         }
 
-#ebene8 form label:first-child {
-    margin-top: 0;
-}
+   #ebene8 {
+    background-color: #FF8B00;
+    background-position: center center;
+    border-top-color: white;
+    border-top-width: thick;
+    border-top-style: solid;
+    padding: 50px;
 
-#ebene8 form label .required {
-    color: darkred;
-}
+               }
 
-/*
- * Gestaltung der Formularfelder
- */
-#ebene8 input,
-#ebene8 textarea,
-#ebene8 select {
-    border: 1px solid #bebebe;
-    padding: 0.5em;
-    margin: 0;
-    outline: none;
-}
+    #ebene8 form {
+     max-width: 30em;
 
-#ebene8 textarea {
-    height: 12em;
-}
+     border: 1px solid #d0d0d0;
+     background: #f0f0f0;
+     padding: 1em;
+               }
 
-/*
- * Der Button zum Abschicken des Formulars
- */
-#ebene8 input[type="submit"] {
-    margin-top: 2em;
-    width: auto;
+    #ebene8 form > *,
+    #ebene8 form > .side-by-side > * {
+     display: block;
+     box-sizing: border-box;
+     width: 100%;
+               }
 
-    background-color: #2e2f30;
-    color: white;
-    font-weight: bold;
+    #ebene8 form > .side-by-side {
+      display: flex;
+               }
+
+    #ebene8 form > .side-by-side > * {
+      margin-right: 0.25em;
+               }
+
+    #ebene8 form > .side-by-side > *:last-child {
+      margin-right: 0;
+               }
+
+     /*
+      * Gestaltung der Feldbezeichner
+      */
+    #ebene8 form label {
+      font-weight: bold;
+      margin-top: 1em;
+               }
+
+    #ebene8 form label:first-child {
+      margin-top: 0;
+               }
+
+    #ebene8 form label .required {
+      color: darkred;
+               }
+
+     /*
+      * Gestaltung der Formularfelder
+      */
+    #ebene8 input,
+    #ebene8 textarea,
+    #ebene8 select {
+      border: 1px solid #bebebe;
+      padding: 0.5em;
+      margin: 0;
+      outline: none;
+               }
+
+    #ebene8 textarea {
+      height: 12em;
+               }
+
+     /*
+      * Der Button zum Abschicken des Formulars
+      */
+    #ebene8 input[type="submit"] {
+      margin-top: 2em;
+      width: auto;
+
+      background-color: #2e2f30;
+      color: white;
+      font-weight: bold;
+
+      transition: background-color 0.2s;
+               }
+
+    #ebene8 input[type="submit"]:hover {
+      background-color: #2868A8;
+               }
+
+      /*
+       * Element mit dem Prüfergebnis
+       */
+     #ebene8 #result {
+       margin-top: 1em;
+       color: red;
+               }
+
+     #ebene8 #result.okay {
+       color: darkgreen;
+               }
 
     transition: background-color 0.2s;
 }
@@ -854,7 +759,7 @@ html {
 
 /*
  * Element mit dem Prüfergebnis
- */
+ */s
 #ebene8 #result {
     margin-top: 1em;
     color: red;
@@ -863,3 +768,5 @@ html {
 #ebene8 #result.okay {
     color: darkgreen;
 }
+/**Ebene 8 Ende
+*/
