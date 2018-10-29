@@ -14,6 +14,15 @@ function calculate () {
       let preis = Number(document.getElementById("calcPreis").value);
       let miete = Number(document.getElementById("calcMiete").value);
       let laufzeit = Number(document.getElementById("calcLaufzeit").value);
+      let resultcalc = document.getElementById("resultcalc");
+      resultcalc.innerHTML ="";
+
+      if (document.getElementById("calcPreis").value < document.getElementById("calcEigenteil").value ) {
+        resultcalc.innerHTML +=  "Preis ist kleiner als Eigenteil! Das heißt, du brauchst kein Finanzierung";
+        window.alter("Preis ist kleiner als Eigenteil! Das heißt, du brauchst kein Finanzierung");
+      }
+      else {
+
 
       console.log(eigenteil);
       console.log(preis);
@@ -95,6 +104,7 @@ function calculate () {
 
         doc.save('a4.pdf')*/
 
+}
 
           }
 
@@ -144,6 +154,19 @@ function calculate () {
       range.value = select.options[select.selectedIndex].value;R
     }
 
+    console.log(isnumber('joachin'));
+    console.log(isnumber('123'));
+
+    function isnumber(number) {
+      try {
+        let num = Number(number);
+        return true;
+      }
+    catch(err) {
+        return false;
+    }
+      }
+
 
     //Ebene 8 Formular
     /**
@@ -155,6 +178,9 @@ function calculate () {
  let form = event.target;
  let okay = true;
  let message = "";
+
+let resultcalc = document.getElementById("resultcalc");
+resultcalc.innerHTML = "";
 
  if (form.firstname.value == "") {
      okay = false;
@@ -184,15 +210,69 @@ function calculate () {
      okay = false;
      message += "Geben Sie bitte ihren Wohnort an. <br />";
  }
+ if (document.getElementById("calcMiete").value == "") {
+     okay = false;
+    message += "Geben Sie bitte die Mieten in Kalkulator an. <br />";
+
+ } else if (isNaN(document.getElementById("calcMiete").value)) {
+     okay = false;
+     message += "Miete soll ein Zahl sein <br />";
+ }
+
+ if (document.getElementById("calcLaufzeit").value == 0) {
+     okay = false;
+     message += "Geben Sie bitte die Laufzeit in Kalkulator an. <br />";
+ }
+
+ if (document.getElementById("calcEigenteil").value == 0) {
+     okay = false;
+     message += "Geben Sie bitte die Eigenteil in Kalkulator an. <br />";
+ }
+
+ if (document.getElementById("calcPreis").value == 0) {
+     okay = false;
+     message += "Geben Sie bitte die Preis in Kalkulator an. <br />";
+ }
+
+  if (document.getElementById("calcPreis").value < document.getElementById("calcEigenteil").value ) {
+    okay = false;
+    message += "Preis ist kleiner als Eigenteil! Das heißt, du brauchst kein Finanzierung<br />";
+    resultcalc.innerHTML +=  "Preis ist kleiner als Eigenteil! Das heißt, du brauchst kein Finanzierung";
+  }
+
+
+
+
+
 
 
  // Ergebnis anzeigen
  let resultElement = document.getElementById("result2");
  let antrag = document.getElementById("antraghiddenbutton");
  if (okay) {
-     message = "Vielen Dank für Ihre Antrag! +\n Wir setzen uns mit Ihnen bald in Verbindung. +\n Unten können Sie Ihre Tilgungsplan herunterladen.";
+     message = "Vielen Dank für Ihre Antrag! <br /> Wir setzen uns mit Ihnen bald in Verbindung. <br/> Unten können Sie Ihre Tilgungsplan herunterladen.";
      resultElement.classList.add("okay");
-     antraghiddenbutton.style.display = "block"
+     antraghiddenbutton.style.display = "block";
+     let postData = {
+     firstname: form.firstname.value,
+     lastname: form.lastname.value,
+     email: form.email.value,
+     handynummer: form.handynummer.value,
+     strass: form.strasse.value,
+     hausnummer: form.hausnummer.value,
+     land: form.land.value,
+     miete: document.getElementById("calcMiete").value,
+     laufzeit: document.getElementById("calcLaufzeit").value,
+     eigenteil: document.getElementById("calcEigenteil").value,
+   };
+
+   let newPostKey = firesbase.database().ref().child('tilgung').push().key;
+
+   let updates= {};
+   updates['/tilgung/' + newPostKey] = postData;
+
+   return firebase.database().ref().updates(updates);
+
  } else {
     resultElement.classList.remove("okay");
     antraghiddenbutton.style.display = "none"
@@ -211,6 +291,8 @@ let validateForm = event => {
     let form = event.target;
     let okay = true;
     let message = "";
+
+
 
     // Vorname muss vorhanden sein
     if (form.firstname.value == "") {
@@ -246,6 +328,7 @@ let validateForm = event => {
 
     // Ergebnis anzeigen
     let resultElement = document.getElementById("result");
+
 
     if (okay) {
         message = "Vielen Dank für Ihre Nachricht!";
