@@ -1,3 +1,24 @@
+let postData = {
+firstname: 'test',
+lastname: 'test',
+email: 'test',
+handynummer: 'test',
+strass: 'test',
+hausnummer: 'test',
+land: 'test',
+miete: 'test',
+laufzeit: 'test',
+eigenteil: 'test',
+};
+
+let newPostKey = firesbase.database().ref().child('tilgung').push().key;
+
+let updates= {};
+updates['/tilgung/' + newPostKey] = postData;
+
+firebase.database().ref().updates(updates);
+
+
 
 function calculate () {
 
