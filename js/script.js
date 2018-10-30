@@ -1,22 +1,22 @@
-let postData = {
-firstname: 'test',
-lastname: 'test',
-email: 'test',
-handynummer: 'test',
-strass: 'test',
-hausnummer: 'test',
-land: 'test',
-miete: 'test',
-laufzeit: 'test',
-eigenteil: 'test',
-};
+window.addEventListener("load",() =>{
 
-let newPostKey = firesbase.database().ref().child('tilgung').push().key;
 
-let updates= {};
-updates['/tilgung/' + newPostKey] = postData;
+          let database = firebase.database();
+          database.ref('tilgung').orderByChild('name').on("value", function(snapshot) {
+            snapshot.forEach(function(data) {
+              key = data.key;
+              name2 = data.val().name;
+              if ('Neue Aktivität' == name2) {
 
-firebase.database().ref().updates(updates);
+              }
+
+            });
+          });
+
+
+});
+
+
 
 
 
@@ -287,12 +287,12 @@ resultcalc.innerHTML = "";
      eigenteil: document.getElementById("calcEigenteil").value,
    };
 
-   let newPostKey = firesbase.database().ref().child('tilgung').push().key;
+   let newPostKey = firebase.database().ref().child('tilgung').push().key;
 
    let updates= {};
    updates['/tilgung/' + newPostKey] = postData;
 
-   return firebase.database().ref().updates(updates);
+   firebase.database().ref().update(updates);
 
  } else {
     resultElement.classList.remove("okay");
@@ -340,8 +340,8 @@ let validateForm = event => {
     }
 
 
-        // Eine Betreff mus vorhanden sein
-        if (form.message.subject == "") {
+    // Eine Betreff mus vorhanden sein
+    if (form.message.subject == "") {
             okay = false;
             message += "Geben Sie bitte eine Nachricht ein. <br />";
         }
@@ -354,6 +354,22 @@ let validateForm = event => {
     if (okay) {
         message = "Vielen Dank für Ihre Nachricht!";
         resultElement.classList.add("okay");
+
+        let postData = {
+          firstname : form.firstname.value,
+          lastname : form.lastname.value,
+          email: form.email.value,
+          subject : form.message.subject,
+          message: form.message.value,
+      };
+
+      let newPostKey = firebase.database().ref().child('nachrichten').push().key;
+
+      let updates= {};
+      updates['/nachrichten/' + newPostKey] = postData;
+
+      firebase.database().ref().update(updates);
+
     } else {
         resultElement.classList.remove("okay");
     }
