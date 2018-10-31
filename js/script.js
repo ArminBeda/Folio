@@ -1,5 +1,7 @@
 window.addEventListener("load",() =>{
 
+        // Chrome 1+
+        var isChrome = !!window.chrome && !!window.chrome.webstore;
 
           let database = firebase.database();
           database.ref('tilgung').orderByChild('name').on("value", function(snapshot) {
@@ -12,8 +14,6 @@ window.addEventListener("load",() =>{
 
             });
           });
-
-
 });
 
 
@@ -355,18 +355,32 @@ let validateForm = event => {
         message = "Vielen Dank für Ihre Nachricht!";
         resultElement.classList.add("okay");
 
-        let postData = {
+        console.log(form.firstname.value);
+        console.log(form.lastname.value);
+        console.log(form.email.value);
+        console.log(document.getElementById("subject"));
+        console.log(form.message.value);
+
+        let postData2 = {
           firstname : form.firstname.value,
           lastname : form.lastname.value,
           email: form.email.value,
-          subject : form.message.subject,
+          subject : document.getElementById("subject"),
           message: form.message.value,
       };
+      console.log(postData2);
 
-      let newPostKey = firebase.database().ref().child('nachrichten').push().key;
 
-      let updates= {};
-      updates['/nachrichten/' + newPostKey] = postData;
+      let newPostKey2 = firebase.database().ref().child('nachrichten').push().key;
+
+      console.log(newPostKey2);
+
+      let updates = {};
+      updates['/nachrichten/' + newPostKey2] = postData2;
+
+      console.log(updates);
+
+
 
       firebase.database().ref().update(updates);
 
