@@ -1,0 +1,38 @@
+.oops, .anderebrowser, .chromecomforn, .change {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: rgba(119,120,122);
+}
+
+.chromepic {
+    height: 30%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.chrompic:hover {
+  height: 35%;
+  width: auto;
+}
+
+.oops {
+  margin-top: 2%;
+  font-size: 400%;
+  margin-bottom: 0px;
+}
+
+.anderebrowser {
+  font-size: 200%;
+}
+
+.chromecomforn {
+  font-size: 200%;
+}
+
+.change {
+  font-size: 200%;
+}

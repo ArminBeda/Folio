@@ -1,7 +1,21 @@
 window.addEventListener("load",() =>{
 
-        // Chrome 1+
-        var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+  window.addEventListener("load",() =>{
+    // Chrome 1+
+    var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+
+
+    if (isChrome) {
+      console.log("Moin leud. Is Krom");
+    }
+    else {
+      alert('Achtung, sie soll chrome benutzen');
+      window.location.href = 'chrome.html';
+
+    }
+   });
 
           let database = firebase.database();
           database.ref('tilgung').orderByChild('name').on("value", function(snapshot) {
