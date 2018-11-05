@@ -245,6 +245,10 @@ resultcalc.innerHTML = "";
      okay = false;
      message += "Geben Sie bitte ihren Wohnort an. <br />";
  }
+ if (form.land.value == "") {
+     okay = false;
+     message += "Geben Sie bitte ihren Wohnort an. <br />";
+ }
  if (document.getElementById("calcMiete").value == "") {
      okay = false;
     message += "Geben Sie bitte die Mieten in Kalkulator an. <br />";
@@ -292,10 +296,18 @@ resultcalc.innerHTML = "";
      firstname: form.firstname.value,
      lastname: form.lastname.value,
      email: form.email.value,
+     beruf: form.beruf.value,
+     nettogehalt: form.beruf.value,
+     link: form.link.value,
+     plz: form.plz.value,
+     stadt: form.stadt.value,
+     land: form.land.value,
      handynummer: form.handynummer.value,
-     strass: form.strasse.value,
+     strasse: form.strasse.value,
      hausnummer: form.hausnummer.value,
      land: form.land.value,
+     gps_lat: form.latitude.value,
+     gps_long: form.longitude.value,
      miete: document.getElementById("calcMiete").value,
      laufzeit: document.getElementById("calcLaufzeit").value,
      eigenteil: document.getElementById("calcEigenteil").value,
@@ -379,6 +391,7 @@ let validateForm = event => {
           firstname : form.firstname.value,
           lastname : form.lastname.value,
           email: form.email.value,
+          phone : form.phone.value,
           subject : document.getElementById("subject"),
           message: form.message.value,
       };
