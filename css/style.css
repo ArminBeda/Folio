@@ -1,6 +1,13 @@
 /**Ebene Header Start
 */
 
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12pt;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +27,7 @@ body
 {
   float: right;
   list-style: none;
-  margin-top: 30px;
+  margin-top: 1.875em;
 }
 
 .main-nav li
@@ -29,37 +36,37 @@ body
 }
 
 .main-nav li.active a {
-  border: 1px solid white;
+  border: 0.063em solid white;
 }
 
 .main-nav li a {
  color:white;
  text-decoration: none;
- padding: 5px 20px;
+ padding: 0.313em 1.250em;
  font-family: "Roboto", sans-serif;
- font-size: 15px;
+ font-size: 0.938em;
 
 }
 
 .row
  {
-   max-width: 1200px;
+   max-width: 75em;
    margin: auto;
-   margin-bottom: 30px !important;
+   margin-bottom: 1.875em !important;
  }
 
  h1 {
    color: white;
-   font-size: 70px;
+   font-size: 4.375em;
    text-align: center;
-   margin-top: 200px;
+   margin-top: 10%;
  }
 
  h2 {
    color: white;
-   font-size: 40px;
+   font-size: 2.5em;
    text-align: center;
-   margin-top: 0px;
+   margin-top: 1%;
  }
 
 
@@ -72,9 +79,9 @@ body
 
  .button
  {
-   margin-top: 30px;
+   margin-top: 1.875em;
    text-align: center;
-   height: 40px;
+   height: 3em;
  }
 
 
@@ -143,43 +150,18 @@ body
    font-size: 20px;
  }
 
- /**Ebene7 antraform
- /*
-  * Allgemeine Angaben
-  */
- @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
- html {
-     font-family: 'Quicksand', sans-serif;
-     font-size: 12pt;
- }
+
 
  /*
   * Basis-Layout des Formulars
   */
 
 
- /**Ebene8 supports
- /*
-  * Allgemeine Angaben
-  */
- @import url('https://fonts.googleapis.com/css?family=Quicksand');
-
- html {
-     font-family: 'Quicksand', sans-serif;
-     font-size: 12pt;
- }
-
-
 /**Ebene Header Ende
-*/
-
-/**Ebene 1 Start
-*/
+---------------------------*/
 
 
-/**Ebene 1 Ende
-*/
 
 /**Ebene 2 Start
 */
@@ -235,7 +217,7 @@ body
 
 
 /**Ebene 2 Ende
-*/
+---------------------------*/
 
 /**Ebene 3 Start
 */
@@ -292,7 +274,7 @@ body
 
 
  /**Ebene 3 Ende
- */
+---------------------------*/
 
  /**Ebene 4 Start
  */
@@ -366,7 +348,7 @@ body
  }
 
   /**Ebene 4 Ende
-  */
+  ---------------------------*/
 
 /**Ebene 5 Start
 */
@@ -475,7 +457,7 @@ body
 }
 
    /**Ebene 5 Ende
-   */
+  ---------------------------*/
 
 /**Ebene 7 Start
 */
@@ -585,10 +567,10 @@ body
 }
 
  /**Ebene 7 Ende
- */
+ ---------------------------*/
 
  /**Ebene 8 Start
-         */
+  */
    .imobilalcontakt, .belalemail, .belalphone, .belaladress {
      display: flex;
      align-items: center;
@@ -746,4 +728,4 @@ body
     color: darkgreen;
 }
 /**Ebene 8 Ende
-*/
+---------------------------*/
