@@ -23,6 +23,15 @@ body
     width: auto;
   }
 
+.up {
+  width: 100% !important;
+}
+
+.uprow {
+  width: 100% !important;
+}
+
+
 .main-nav
 {
   float: right;
@@ -44,7 +53,7 @@ body
  text-decoration: none;
  padding: 0.313em 1.250em;
  font-family: "Roboto", sans-serif;
- font-size: 0.938em;
+ font-size: 16px;
 
 }
 
@@ -150,6 +159,57 @@ body
    font-size: 20px;
  }
 
+/*Kleine Geräte und Smartphones*/
+ @media (max-width: 768px) {
+
+
+   html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 15px;
+}
+.bbn-one {
+  margin-bottom: 8px;
+}
+
+.bbn-one, .bbn-two {
+  font-size: 13px;
+  width: 200px;
+  height: 100%;
+}
+
+* {
+  text-align: center !important;
+  align-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+
+   .main-nav {
+     float:inherit;
+     list-style: none;
+     margin-top: 1.875em;
+   }
+
+   .main-nav li {
+     display: flex;
+   }
+
+
+
+ }
+
 
 
 
@@ -215,6 +275,14 @@ body
   height: 100%;
 }
 
+@media (max-width: 768px) {
+
+.element > p {
+  text-align: justify !important;
+}
+
+}
+
 
 /**Ebene 2 Ende
 ---------------------------*/
@@ -269,6 +337,47 @@ body
    display: block;
    margin-left: auto;
    margin-right: auto;
+ }
+
+ @media (max-width: 768px) {
+.prozesstitle {
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+  text-align: center !important;
+  align-self: center !important;
+}
+.number {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+.einziehen {
+  text-align: center !important;
+  align-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.einziehenproc {
+  text-align: center !important;
+  align-content: center !important;
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  padding-right: 100%;
+}
+
+.prozessicon {
+  width: 50%;
+}
+
+.prozessicon > img {
+  height: 75px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
  }
 
 
@@ -361,6 +470,8 @@ body
   border-color: white;
   color: white;
   width: 230px;
+  margin-top: 1em;
+  margin-left: 1em;
 }
 
 .kundepic {
@@ -468,6 +579,21 @@ body
     background: #f0f0f0;
     padding: 1em;
 }
+
+.tilgunsplan {
+  color: #211D1C;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  border-style: dashed;
+  border-color: #211D1C;
+  width: 500px;
+
+}
+
 
 #ebene7 form > *,
 #ebene7 form > .side-by-side > * {
@@ -718,7 +844,7 @@ body
 
 /*
  * Element mit dem Prüfergebnis
- */s
+ */
 #ebene8 #result {
     margin-top: 1em;
     color: red;

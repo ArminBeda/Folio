@@ -2,6 +2,7 @@ window.addEventListener("load",() =>{
 
 
   window.addEventListener("load",() =>{
+
     // Chrome 1+
     var isChrome = !!window.chrome && !!window.chrome.webstore;
 

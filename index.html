@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>ImmobBilal</title>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -60,17 +60,18 @@ else {
 
 <body>
   <header>
-      <div class="row">
+    <div class="container up">
+      <div class="row uprow">
+        <div class = "col-md-1">
       <!--FirmenLogo rechts oben-->
       <div class="logo">
         <img src="img/logo.png"/>
         <p class="logotitle">ImmoBilal<p/>
       </div>
-
+    </div>
       <!--Bottsarp colums to put navigation bar to the side-->
-      <div class="col-md-2">
-      </div>
 
+      <div class="col-md-11 listcolumn">
       <ul class="main-nav">
         <li class="active"><a href="">
         HOME </a></li>
@@ -83,6 +84,8 @@ else {
       </ul>
 
     </div>
+  </div>
+</div>
 
     <div class="start" id="start1">
       <h1>Dein Traumhaus.</h1>
@@ -239,8 +242,8 @@ else {
              <div class="col-md-3">
                <p class="number">2.</p>
              </div>
-             <div class="col-md-9">
-               <p class="prozesstitle">Einziehen</p>
+             <div class="col-md-9 einziehen">
+               <p class="prozesstitle einziehenproc">Einziehen</p>
                <p class="prozessbeschreibung">Du kannst sofort einziehen. Aber an dieser
                  Stelle gehört das Haus zu uns, also musst Du uns Miete bezahlen.
                  </p>
@@ -613,6 +616,7 @@ else {
 
           <div class="ebene" id="ebene7" style="min-height: 80vh;">
             <a id="#ebene7"> </a>
+            <p class="blocktitel tilgunsplan" ><a id="#ebene2"> Tilgungsplan Beantragen </a> <p>
             <div class="container antrag">
             <div class="row">
               <!--Rechner-->
