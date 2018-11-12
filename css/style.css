@@ -196,6 +196,8 @@ h2 {
   align-content: center !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  padding-left: auto !important;
+  padding-right: auto !important;
 }
 
 
@@ -363,15 +365,40 @@ h2 {
  }
 
  @media (max-width: 768px) {
+
+   .blocktitelprozess {
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 50px;
+      font-size: 40px;
+      font-weight: bold;
+      border-style: dashed;
+      background-color: #FF8B00;
+      width: 100%;
+    }
+
+    .moinleud {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-left: 20% !important;
+      }
+
+
 .prozesstitle {
   padding-top: 0px !important;
   margin-top: 0px !important;
   text-align: center !important;
   align-self: center !important;
+  text-align: center !important;
+  align-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .number {
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
+  text-align: center !important;
+  align-content: center !important;
 }
 .einziehen {
   text-align: center !important;
@@ -859,9 +886,6 @@ h2 {
      #ebene8 #result.okay {
        color: darkgreen;
                }
-
-    transition: background-color 0.2s;
-}
 
 #ebene8 input[type="submit"]:hover {
     background-color: #2868A8;
